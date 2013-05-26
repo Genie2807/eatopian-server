@@ -15,9 +15,6 @@ public class Menu {
 	 */
 	private HashMap<String, ArrayList<Item>> Menu_List;
 
-	
-	
-	
 	public HashMap<String, ArrayList<Item>> getMenu_List() {
 		return Menu_List;
 	}
