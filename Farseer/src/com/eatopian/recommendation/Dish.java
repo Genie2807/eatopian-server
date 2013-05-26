@@ -4,7 +4,26 @@ import java.util.ArrayList;
 
 public class Dish {
 
-	private String dishID, dishName, dishChineseName;
+	private String dishID;
+
+    public String getDishName() {
+        return dishName;
+    }
+
+    public void setDishName(String dishName) {
+        this.dishName = dishName;
+    }
+
+    public String getDishChineseName() {
+        return dishChineseName;
+    }
+
+    public void setDishChineseName(String dishChineseName) {
+        this.dishChineseName = dishChineseName;
+    }
+
+    private String dishName;
+    private String dishChineseName;
 	private ArrayList<String> ingredientTagList, tasteTagList, cookingTagList;
 
 	public ArrayList<String> getIngredientTagList() {
@@ -36,6 +55,14 @@ public class Dish {
 		this.dishName = dishName;
 		this.dishChineseName = dishChineseName;
 	}
+
+    public String getDishID() {
+        return dishID;
+    }
+
+    public void setDishID(String dishID) {
+        this.dishID = dishID;
+    }
 }
 // {
 // dishName: Sauteed Julienne Beef w/Long Horn Peppers,
