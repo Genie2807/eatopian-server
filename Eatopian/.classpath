@@ -2,11 +2,22 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="src/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="src/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="src/lib/mongo-2.10.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/mysql-connector-java-5.1.25-bin.jar"/>
+	<classpathentry kind="lib" path="src/lib/org.springframework.transaction_3.0.5.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/lib/spring-beans-3.2.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/lib/spring-context-3.2.2.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/lib/spring-core-3.2.2.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-data-commons-core-1.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-data-mongodb-1.0.0.M3.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-data-mongodb-1.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-data-mongodb-cross-store-1.2.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-data-mongodb-log4j-1.2.0.RELEASE.jar"/>
 	<classpathentry kind="lib" path="src/lib/spring-expression-3.2.2.RELEASE.jar"/>
-	<classpathentry kind="lib" path="src/lib/commons-lang3-3.1.jar"/>
-	<classpathentry kind="lib" path="src/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="src/lib/spring-jdbc-3.2.2.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
