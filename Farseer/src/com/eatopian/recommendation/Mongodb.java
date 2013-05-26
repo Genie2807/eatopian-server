@@ -127,6 +127,41 @@ public class Mongodb implements DAO {
 		// TODO Auto-generated method stub
 		return dishList;
 	}
+
+
+	@Override
+	public boolean addDish(Dish dish) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public boolean addIngredientTag(String tagName) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public boolean addTasteTag(String tagName) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public boolean addCookingTag(String tagName) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public boolean addDishSimilarity(String dishID, Map<String, Double> map) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 	
 	
 	
