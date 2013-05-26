@@ -15,4 +15,15 @@ public interface DAO {
 	
 	List<Dish> getAllDishes();
 	
+	
+	boolean addDish(Dish dish);
+	
+	boolean addIngredientTag(String tagName);
+	
+	boolean addTasteTag(String tagName);
+	
+	boolean addCookingTag(String tagName);
+	
+	boolean addDishSimilarity(String dishID, Map<String, Double> map);
+	
 }
