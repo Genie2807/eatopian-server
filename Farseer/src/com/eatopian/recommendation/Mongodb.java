@@ -66,7 +66,7 @@ public class Mongodb implements DAO {
 	public Map<String, Integer> getCookingMap() {
 		Map<String, Integer> cookingMap = new HashMap<String, Integer>();
 		int index = 0;
-		DBCollection coll = mongodb.getCollection("CookingMap_Tag");
+		DBCollection coll = mongodb.getCollection("Cooking_Tag");
 		DBCursor cursor = coll.find();
 		try {
 			while (cursor.hasNext()) {

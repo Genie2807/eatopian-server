@@ -13,6 +13,16 @@ public class Similarity {
     private DAO dao;
     private List<Dish> allDish;
 
+    public static void main(String[] args) {
+        (new Similarity()).work();
+    }
+
+    public void work() {
+        DAO dao=new Mongodb();
+        this.init(dao);
+        this.getAllSimilarityForAllDishes();
+    }
+
     public void init(DAO dao) {
         this.dao = dao;
         IngredientMap = dao.getIngredientMap();
@@ -114,6 +124,13 @@ public class Similarity {
             map.put(pd.getDishId(), pd.getSimilarity());
         }
         return map;
+    }
+
+    private void getAllSimilarityForAllDishes() {
+        for(Dish dish1:this.allDish) {
+            Map<String, Double> map=getAllSimilarityForDish(dish1);
+            this.dao.addDishSimilarity(dish1.getDishID(),map);
+        }
     }
 
 }
