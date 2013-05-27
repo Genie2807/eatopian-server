@@ -1,5 +1,7 @@
 package com.eatopian.recommendation;
 
+import org.bson.types.ObjectId;
+
 import java.util.*;
 
 /**
@@ -77,19 +79,19 @@ public class Similarity {
 	private class PriorityDish {
 		private double similarity;
 
-		private String getDishId() {
-			return dishId;
+		private ObjectId getDishID() {
+			return this.dishID;
 		}
 
-		private void setDishId(String dishId) {
-			this.dishId = dishId;
+		private void setDishID(ObjectId dishID) {
+			this.dishID = dishID;
 		}
 
-		private String dishId;
+		private ObjectId dishID;
 
-		public PriorityDish(double similarity, String dishID) {
+		public PriorityDish(double similarity, ObjectId dishID) {
 			this.similarity = 0.0;
-			this.dishId = dishId;
+			this.dishID = dishID;
 		}
 
 		public double getSimilarity() {
@@ -102,7 +104,7 @@ public class Similarity {
 
 	}
 
-	private Map<String, Double> getAllSimilarityForDish(Dish dish1) {
+	private Map<ObjectId, Double> getAllSimilarityForDish(Dish dish1) {
 		PriorityQueue<PriorityDish> heap = new PriorityQueue<PriorityDish>(20,
 				new Comparator<PriorityDish>() {
 					@Override
@@ -118,18 +120,18 @@ public class Similarity {
 			double s = this.getSimilarity(dish1, dish2);
 			heap.add(new PriorityDish(s, dish2.getDishID()));
 		}
-		Map<String, Double> map = new HashMap<String, Double>();
+		Map<ObjectId, Double> map = new HashMap<ObjectId, Double>();
 		int sizeH = heap.size();
 		for (int i = 0; i < 20 && i < sizeH; i++) {
 			PriorityDish pd = heap.poll();
-			map.put(pd.getDishId(), pd.getSimilarity());
+			map.put(pd.getDishID(), pd.getSimilarity());
 		}
 		return map;
 	}
 
 	private void getAllSimilarityForAllDishes() {
 		for (Dish dish1 : this.allDish) {
-			Map<String, Double> map = getAllSimilarityForDish(dish1);
+			Map<ObjectId, Double> map = getAllSimilarityForDish(dish1);
 			this.dao.addDishSimilarity(dish1.getDishID(), map);
 		}
 	}
