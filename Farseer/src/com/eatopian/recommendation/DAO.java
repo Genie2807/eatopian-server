@@ -3,6 +3,8 @@ package com.eatopian.recommendation;
 import java.util.List;
 import java.util.Map;
 
+import org.bson.types.ObjectId;
+
 public interface DAO {
 	
 	Map<String, Integer> getIngredientMap();
@@ -11,7 +13,7 @@ public interface DAO {
 	
 	Map<String, Integer> getCookingMap();
 	
-	Dish getDish(String dishID);
+	Dish getDish(ObjectId dishID);
 	
 	List<Dish> getAllDishes();
 	
@@ -24,6 +26,6 @@ public interface DAO {
 	
 	boolean addCookingTag(String tagName);
 	
-	boolean addDishSimilarity(String dishID, Map<String, Double> map);
+	boolean addDishSimilarity(ObjectId dishID, Map<ObjectId, Double> map);
 	
 }

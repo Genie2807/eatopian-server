@@ -1,120 +1,105 @@
 package com.eatopian.recommendation;
 
-import java.util.ArrayList;
+import java.util.List;
+
+import org.bson.types.ObjectId;
 
 public class Dish {
 
-    private String dishID;
+	private ObjectId dishID;
+	private String dishName, dishChineseName, restaurantName, restaurantChineseName;
+	private List ingredientTagList, tasteTagList, cookingTagList;
 
-    public String getDishName() {
-        return dishName;
-    }
+	public Dish() {
+		this.dishID = null;
+	}
 
-    public void setDishName(String dishName) {
-        this.dishName = dishName;
-    }
+	public Dish(ObjectId objectId, String dName, String dCName) {
+		this.dishID = objectId;
+		this.dishName = dName;
+		this.dishChineseName = dCName;
+	}
 
-    public String getDishChineseName() {
-        return dishChineseName;
-    }
+	public ObjectId getDishID() {
+		return dishID;
+	}
 
-    public void setDishChineseName(String dishChineseName) {
-        this.dishChineseName = dishChineseName;
-    }
+	public void setDishID(ObjectId dishID) {
+		this.dishID = dishID;
+	}
 
-    private String restaurantName;
-    private String restaurantChineseName;
+	public String getDishName() {
+		return dishName;
+	}
 
-    private String dishName;
-    private String dishChineseName;
-    private ArrayList<String> ingredientTagList, tasteTagList, cookingTagList;
+	public void setDishName(String dishName) {
+		this.dishName = dishName;
+	}
 
-    public ArrayList<String> getIngredientTagList() {
-        return ingredientTagList;
-    }
+	public String getDishChineseName() {
+		return dishChineseName;
+	}
 
-    public void setIngredientTagList(ArrayList<String> ingredientTagList) {
-        this.ingredientTagList = ingredientTagList;
-    }
+	public void setDishChineseName(String dishChineseName) {
+		this.dishChineseName = dishChineseName;
+	}
 
-    public ArrayList<String> getTasteTagList() {
-        return tasteTagList;
-    }
+	public List getIngredientTagList() {
+		return ingredientTagList;
+	}
 
-    public void setTasteTagList(ArrayList<String> tasteTagList) {
-        this.tasteTagList = tasteTagList;
-    }
+	public void setIngredientTagList(List ingredientTagList) {
+		this.ingredientTagList = ingredientTagList;
+	}
 
-    public ArrayList<String> getCookingTagList() {
-        return cookingTagList;
-    }
+	public List getTasteTagList() {
+		return tasteTagList;
+	}
 
-    public void setCookingTagList(ArrayList<String> cookingTagList) {
-        this.cookingTagList = cookingTagList;
-    }
+	public void setTasteTagList(List tasteTagList) {
+		this.tasteTagList = tasteTagList;
+	}
 
-    public Dish(String dID, String dishName, String dishChineseName) {
-        this.dishID = dID;
-        this.dishName = dishName;
-        this.dishChineseName = dishChineseName;
-    }
+	public List getCookingTagList() {
+		return cookingTagList;
+	}
 
-    public Dish() {
-        this.dishID = null;
-    }
+	public void setCookingTagList(List cookingTagList) {
+		this.cookingTagList = cookingTagList;
+	}
 
-    public String getDishID() {
-        return dishID;
-    }
+	public String getRestaurantName() {
+		return restaurantName;
+	}
 
-    public void setDishID(String dishID) {
-        this.dishID = dishID;
-    }
+	public void setRestaurantName(String restaurantName) {
+		this.restaurantName = restaurantName;
+	}
 
-    public String getRestaurantName() {
-        return restaurantName;
-    }
+	public String getRestaurantChineseName() {
+		return restaurantChineseName;
+	}
 
-    public void setRestaurantName(String restaurantName) {
-        this.restaurantName = restaurantName;
-    }
+	public void setRestaurantChineseName(String restaurantChineseName) {
+		this.restaurantChineseName = restaurantChineseName;
+	}
 
-    public String getRestaurantChineseName() {
-        return restaurantChineseName;
-    }
-
-    public void setRestaurantChineseName(String restaurantChineseName) {
-        this.restaurantChineseName = restaurantChineseName;
-    }
-
-    public String toString() {
-        StringBuilder sb=new StringBuilder();
-        sb.append(this.restaurantName);
-        sb.append("\n");
-        sb.append(this.restaurantChineseName);
-        sb.append("\n");
-        sb.append(this.dishName);
-        sb.append("\n");
-        sb.append(this.dishChineseName);
-        sb.append("\n");
-        sb.append(this.getIngredientTagList());
-        sb.append("\n");
-        sb.append(this.getTasteTagList());
-        sb.append("\n");
-        sb.append(this.getCookingTagList());
-        sb.append("\n\n");
-
-        return sb.toString();
-    }
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.restaurantName);
+		sb.append("\n");
+		sb.append(this.restaurantChineseName);
+		sb.append("\n");
+		sb.append(this.dishName);
+		sb.append("\n");
+		sb.append(this.dishChineseName);
+		sb.append("\n");
+		sb.append(this.getIngredientTagList());
+		sb.append("\n");
+		sb.append(this.getTasteTagList());
+		sb.append("\n");
+		sb.append(this.getCookingTagList());
+		sb.append("\n\n");
+		return sb.toString();
+	}
 }
-// {
-// dishName: Sauteed Julienne Beef w/Long Horn Peppers,
-// dishChineseName: 小辣椒牛肉丝,
-// Ingredient: [tagID, tagID, tagID....],
-// Taste: [tagID, tagID, tagID....],
-// Cooking: [tagID, tagID, tagID....]
-//
-// $beef,pepper
-// $salty,spicy
-// $lunch special,stir-fry
-// }
