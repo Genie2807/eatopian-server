@@ -132,6 +132,7 @@ public class Mongodb implements DAO {
 	@Override
 	public boolean addDish(Dish dish) {
 		// TODO Auto-generated method stub
+        System.out.println(dish);
 		return false;
 	}
 
