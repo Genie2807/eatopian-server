@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/lib/org.springframework.transaction_3.0.5.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-data-mongodb-1.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-data-mongodb-log4j-1.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/junit-4.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-expression-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-core-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/commons-lang3-3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/mysql-connector-java-5.1.25-bin.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-jdbc-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-data-mongodb-1.0.0.M3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/mongo-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-context-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-data-commons-core-1.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-beans-3.2.2.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/spring-data-mongodb-cross-store-1.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/lib/log4j-1.2.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

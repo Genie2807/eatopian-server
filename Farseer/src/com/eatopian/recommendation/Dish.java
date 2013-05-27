@@ -7,12 +7,19 @@ import org.bson.types.ObjectId;
 public class Dish {
 
 	private ObjectId dishID;
-	private String dishName, dishChineseName;
+	private String dishName, dishChineseName, restaurantName, restaurantChineseName;
 	private List ingredientTagList, tasteTagList, cookingTagList;
-	
-	
-	
-	
+
+	public Dish() {
+		this.dishID = null;
+	}
+
+	public Dish(ObjectId objectId, String dName, String dCName) {
+		this.dishID = objectId;
+		this.dishName = dName;
+		this.dishChineseName = dCName;
+	}
+
 	public ObjectId getDishID() {
 		return dishID;
 	}
@@ -61,9 +68,38 @@ public class Dish {
 		this.cookingTagList = cookingTagList;
 	}
 
-	public Dish(ObjectId objectId, String dName, String dCName) {
-		this.dishID = objectId;
-		this.dishName = dishName;
-		this.dishChineseName = dishChineseName;
+	public String getRestaurantName() {
+		return restaurantName;
+	}
+
+	public void setRestaurantName(String restaurantName) {
+		this.restaurantName = restaurantName;
+	}
+
+	public String getRestaurantChineseName() {
+		return restaurantChineseName;
+	}
+
+	public void setRestaurantChineseName(String restaurantChineseName) {
+		this.restaurantChineseName = restaurantChineseName;
+	}
+
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.restaurantName);
+		sb.append("\n");
+		sb.append(this.restaurantChineseName);
+		sb.append("\n");
+		sb.append(this.dishName);
+		sb.append("\n");
+		sb.append(this.dishChineseName);
+		sb.append("\n");
+		sb.append(this.getIngredientTagList());
+		sb.append("\n");
+		sb.append(this.getTasteTagList());
+		sb.append("\n");
+		sb.append(this.getCookingTagList());
+		sb.append("\n\n");
+		return sb.toString();
 	}
 }

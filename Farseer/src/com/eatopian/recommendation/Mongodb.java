@@ -151,7 +151,7 @@ public class Mongodb implements DAO {
 		.append("Taste", dish.getTasteTagList())
 		.append("Cooking", dish.getCookingTagList());
 		if(coll.insert(doc) != null)
-			return true;	
+			return true;
 		return false;
 	}
 

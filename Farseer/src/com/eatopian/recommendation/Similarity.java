@@ -13,6 +13,16 @@ public class Similarity {
 	private DAO dao;
 	private List<Dish> allDish;
 
+	public static void main(String[] args) {
+		(new Similarity()).work();
+	}
+
+	public void work() {
+		DAO dao = new Mongodb();
+		this.init(dao);
+		this.getAllSimilarityForAllDishes();
+	}
+
 	public void init(DAO dao) {
 		this.dao = dao;
 		IngredientMap = dao.getIngredientMap();
@@ -64,34 +74,63 @@ public class Similarity {
 		return similarity;
 	}
 
-	private class PriorityDish extends Dish {
+	private class PriorityDish {
 		private double similarity;
 
-		public PriorityDish(String dID, String dName, String dCName) {
-			super(dID, dName, dCName);
+		private String getDishId() {
+			return dishId;
+		}
+
+		private void setDishId(String dishId) {
+			this.dishId = dishId;
+		}
+
+		private String dishId;
+
+		public PriorityDish(double similarity, String dishID) {
 			this.similarity = 0.0;
+			this.dishId = dishId;
 		}
 
 		public double getSimilarity() {
-			return similarity;
+			return this.similarity;
 		}
 
 		public void setSimilarity(double similarity) {
 			this.similarity = similarity;
 		}
+
 	}
 
-	private void getAllSimilarityForDish(Dish dish1) {
+	private Map<String, Double> getAllSimilarityForDish(Dish dish1) {
 		PriorityQueue<PriorityDish> heap = new PriorityQueue<PriorityDish>(20,
 				new Comparator<PriorityDish>() {
 					@Override
 					public int compare(PriorityDish o1, PriorityDish o2) {
-						return 0; // To change body of implemented methods use
-									// File | Settings | File Templates.
+						if (o1.similarity > o2.similarity)
+							return -1;
+						if (o1.similarity < o2.similarity)
+							return 1;
+						return 0;
 					}
 				});
 		for (Dish dish2 : this.allDish) {
 			double s = this.getSimilarity(dish1, dish2);
+			heap.add(new PriorityDish(s, dish2.getDishID()));
+		}
+		Map<String, Double> map = new HashMap<String, Double>();
+		int sizeH = heap.size();
+		for (int i = 0; i < 20 && i < sizeH; i++) {
+			PriorityDish pd = heap.poll();
+			map.put(pd.getDishId(), pd.getSimilarity());
+		}
+		return map;
+	}
+
+	private void getAllSimilarityForAllDishes() {
+		for (Dish dish1 : this.allDish) {
+			Map<String, Double> map = getAllSimilarityForDish(dish1);
+			this.dao.addDishSimilarity(dish1.getDishID(), map);
 		}
 	}
 
