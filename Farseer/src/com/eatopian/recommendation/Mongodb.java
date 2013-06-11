@@ -83,77 +83,85 @@ public class Mongodb implements DAO {
 	}
 
 	@Override
-	public Dish getDish(ObjectId dishID) {
-		// TODO Auto-generated method stub
-		Dish targetDish = null;
-		DBCollection coll = mongodb.getCollection("Dish");
-		BasicDBObject query = new BasicDBObject("_id", dishID);
-		DBCursor cursor = coll.find(query);
-		try {
-			while (cursor.hasNext()) {
-				DBObject dbObject = cursor.next();
-				targetDish = new Dish(dishID,
-						(String) dbObject.get("dishName"),
-						(String) dbObject.get("dishChineseName"));
-				BasicDBList ingredientList = (BasicDBList) dbObject
-						.get("Ingredient");
-				BasicDBList tasteList = (BasicDBList) dbObject
-						.get("Taste");
-				BasicDBList cookingList = (BasicDBList) dbObject
-						.get("Cooking");
-				targetDish.setIngredientTagList(ingredientList);
-				targetDish.setTasteTagList(tasteList);
-				targetDish.setCookingTagList(cookingList);
-			}
-		} finally {
-			cursor.close();
-		}
-		return targetDish;
-	}
+    public Dish getDish(ObjectId dishID) {
+        // TODO Auto-generated method stub
+        Dish targetDish = null;
+        DBCollection coll = mongodb.getCollection("Dish");
+        BasicDBObject query = new BasicDBObject("_id", dishID);
+        DBCursor cursor = coll.find(query);
+        try {
+            while (cursor.hasNext()) {
+                DBObject dbObject = cursor.next();
+                targetDish = new Dish(dishID,
+                        (String) dbObject.get("dishName"),
+                        (String) dbObject.get("dishChineseName"));
+                targetDish.setRestaurantName((String) dbObject.get("restaurantName"));
+                targetDish.setRestaurantChineseName((String) dbObject.get("restaurantChineseName"));
+                BasicDBList ingredientList = (BasicDBList) dbObject
+                        .get("Ingredient");
+                BasicDBList tasteList = (BasicDBList) dbObject
+                        .get("Taste");
+                BasicDBList cookingList = (BasicDBList) dbObject
+                        .get("Cooking");
+                targetDish.setIngredientTagList(ingredientList);
+                targetDish.setTasteTagList(tasteList);
+                targetDish.setCookingTagList(cookingList);
+            }
+        } finally {
+            cursor.close();
+        }
+        return targetDish;
+    }
 
 	@Override
-	public List<Dish> getAllDishes() {
-		List<Dish> dishList = new ArrayList<Dish>();
-		DBCollection coll = mongodb.getCollection("Dish");
-		DBCursor cursor = coll.find();
-		try {
-			while (cursor.hasNext()) {
-				DBObject dbObject = cursor.next();
-				Dish targetDish = new Dish( (ObjectId) dbObject.get("_id"),
-						(String) dbObject.get("dishName"),
-						(String) dbObject.get("dishChineseName"));
-				BasicDBList ingredientList = (BasicDBList) dbObject
-						.get("Ingredient");
-				BasicDBList tasteList = (BasicDBList) dbObject
-						.get("Taste");
-				BasicDBList cookingList = (BasicDBList) dbObject
-						.get("Cooking");
-				targetDish.setIngredientTagList(ingredientList);
-				targetDish.setTasteTagList(tasteList);
-				targetDish.setCookingTagList(cookingList);
-				dishList.add(targetDish);
-			}
-		} finally {
-			cursor.close();
-		}
+    public List<Dish> getAllDishes() {
+        List<Dish> dishList = new ArrayList<Dish>();
+        DBCollection coll = mongodb.getCollection("Dish");
+        DBCursor cursor = coll.find();
+        try {
+            while (cursor.hasNext()) {
+                DBObject dbObject = cursor.next();
+                Dish targetDish = new Dish( (ObjectId) dbObject.get("_id"),
+                        (String) dbObject.get("dishName"),
+                        (String) dbObject.get("dishChineseName"));
+                targetDish.setRestaurantName((String) dbObject.get("restaurantName"));
+                targetDish.setRestaurantChineseName((String) dbObject.get("restaurantChineseName"));
+                BasicDBList ingredientList = (BasicDBList) dbObject
+                        .get("Ingredient");
+                BasicDBList tasteList = (BasicDBList) dbObject
+                        .get("Taste");
+                BasicDBList cookingList = (BasicDBList) dbObject
+                        .get("Cooking");
+                targetDish.setIngredientTagList(ingredientList);
+                targetDish.setTasteTagList(tasteList);
+                targetDish.setCookingTagList(cookingList);
+                dishList.add(targetDish);
+            }
+        } finally {
+            cursor.close();
+        }
 
-		// TODO Auto-generated method stub
-		return dishList;
-	}
+        // TODO Auto-generated method stub
+        return dishList;
+    }
+
 
 	@Override
-	public boolean addDish(Dish dish) {
-		// TODO Auto-generated method stub
-		DBCollection coll = mongodb.getCollection("Dish");		
-		BasicDBObject doc = new BasicDBObject("dishName", dish.getDishName())
-		.append("dishChineseName", dish.getDishChineseName())
-		.append("Ingredient", dish.getIngredientTagList())
-		.append("Taste", dish.getTasteTagList())
-		.append("Cooking", dish.getCookingTagList());
-		if(coll.insert(doc) != null)
-			return true;
-		return false;
-	}
+    public boolean addDish(Dish dish) {
+        // TODO Auto-generated method stub
+        DBCollection coll = mongodb.getCollection("Dish");
+        BasicDBObject doc = new BasicDBObject("dishName", dish.getDishName())
+                .append("dishChineseName", dish.getDishChineseName())
+                .append("restaurantName", dish.getRestaurantName())
+                .append("restaurantChineseName", dish.getRestaurantChineseName())
+                .append("Ingredient", dish.getIngredientTagList())
+                .append("Taste", dish.getTasteTagList())
+                .append("Cooking", dish.getCookingTagList());
+        if(coll.insert(doc) != null)
+            return true;
+        return false;
+    }
+
 
 	@Override
 	public boolean addIngredientTag(String tagName) {
@@ -186,14 +194,35 @@ public class Mongodb implements DAO {
 	}
 
 	@Override
-	public boolean addDishSimilarity(ObjectId dishID, Map<ObjectId, Double> map) {
-		// TODO Auto-generated method stub
-		DBCollection coll = mongodb.getCollection("Similarity_Table");		
-		BasicDBObject doc = new BasicDBObject("_id", dishID)
-		.append("similarity", map);	
-		if(coll.insert(doc) != null)
-			return true;	
-		return false;
-	}
+    public boolean addDishSimilarity(ObjectId dishID, Map<String, Double> map) {
+        // TODO Auto-generated method stub
+        DBCollection coll = mongodb.getCollection("Similarity_Table");
+        BasicDBObject doc = new BasicDBObject("_id", dishID)
+                .append("similarity", map);
+        if(coll.insert(doc) != null)
+            return true;
+        return false;
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public Map<String, Double> getDishSimilarity(ObjectId dishID) {
+        // TODO Auto-generated method stub
+        DBCollection coll = mongodb.getCollection("Similarity_Table");
+        BasicDBObject query = new BasicDBObject("_id", dishID);
+        DBCursor cursor = coll.find(query);
+        Map<String, Double> map = null;
+        try {
+            while (cursor.hasNext()) {
+                DBObject dbObject = cursor.next();
+                map = (Map<String, Double>) dbObject.get("similarity");
+            }
+        } finally {
+            cursor.close();
+        }
+        return map;
+    }
+
+
 
 }

@@ -1,0 +1,1465 @@
+!Sichuan Garden
+!四川饭庄
+@General Tso’s Chicken
+@左宗棠雞
+$chicken
+$sweet
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Tangerine Chicken or Beef
+@陳皮雞塊
+$chicken,tangerine
+$sweet
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sesame Chicken or Beef
+@芝麻雞塊
+$chicken,sesame
+$sweet
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Chicken with Broccoli
+@芥蘭雞丁
+$chicken,broccoli
+$salty
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Chicken with Roasted Chilli-Peanut
+@宫保雞丁
+$chicken
+$kung pao
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Chicken with Spicy Garlic Sauce
+@鱼香雞片
+$chicken
+$yu hsiang
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Chicken with Cashew Nuts
+@腰果雞丁
+$chicken,cashew
+$sweet
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Chicken with fresh Mushrooms and Pea Pods
+@蘑菇雞片
+$chicken,mushroom
+$salty
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Chicken and Shrimp in Sichuan Garlic Sauce
+@四川兩樣
+$chicken,shrimp
+$salty,sweet
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Pepper Steak with Onion
+@青椒牛肉
+$pepper,beef
+$spicy,salty
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Beef with Shiitake & Bamboo Shoots
+@雙冬牛肉
+$bamboo shoot,beef
+$salty
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Beef Filet with Spring Onion
+@雙冬牛肉
+$scallion,beef
+$sweet
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Beef Filet with Broccoli
+@芥蘭牛肉
+$broccoli,beef
+$delicate
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Double Cooked Sliced Pork & Vegetable with Plum Sauce
+@回鍋肉片
+$pork,vegetable
+$salty
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Pork with Garlic Sauce
+@鱼香肉絲
+$pork
+$yu hsiang
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Baby Shrimps with Sichuan Chilli Sauce
+@四川蝦仁
+$shrimp
+$spicy,salty
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Baby Shrimps with roasted Chilli-Peanut (Kong Pao)
+@宫保蝦仁
+$shrimp
+$kung pao
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Baby Shrimps with Cashew Nuts
+@腰果蝦仁
+$shrimp,cashew
+$kung pao
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Vegetarian Delight (Steamed or Spicy Garlic Sauce)
+@素什錦
+$vegetable
+$delicate
+$steam,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Bean Curd Family Style
+@家常豆腐
+$tofu
+$salty,delicate
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Chef’s Ma Paul Tofu with Minced Pork
+@麻婆豆腐
+$tofu
+$salty,spicy
+$steam,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Teriyaki Steak, Chicken Fingers
+@牛肉串雞條
+$beef,chicken
+$sweet
+$fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Boneless Spareribs, Teriyaki Steak
+@無骨排牛肉串
+$beef
+$salty
+$fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Boneless Spareribs, Teriyaki Steak
+@小椒牛肉絲
+$beef,pepper
+$salty,spicy
+$stir-fry,lunch special
+
+!Sichuan Garden
+!四川饭庄
+@Rabbit with Roasted Chilli Vinaigrette
+@二姐兔丁
+$rabbit
+$salty,spicy
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@OX Meat and Tripe with Roasted Chilli-Peanut Vinaigrette
+@夫妻肺片
+$pork
+$salty,spicy
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Beef Tendon with Roasted Chilli Vinaigrette
+@麻辣牛筋
+$cowhells
+$salty,spicy
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Special Flavor Chicken
+@怪味雞絲
+$strange,chicken
+$salty
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Tripe with Roasted Chilli Vinaigrette
+@紅油肚絲
+$pork
+$salty,spicy
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Poached Tender Beef with Five Spiced
+@五香牛肉
+$beef
+$spicy,salty
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Baby Shrimps with Scallion Pesto
+@蔥油蝦仁
+$shrimp,scallion
+$salty
+$fry,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Julienne Jelly Fish with Scallion Pesto
+@蔥油海蜇
+$scallion,jellyfish
+$salty
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Stuffed Tofu Crepe with Shiitake-Bamboo Shoots
+@雙冬素鴨
+$tofu,bamboo shoot
+$delicate
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Stuffed Tofu Crepe with Shiitake-Bamboo Shoots
+@雙冬素鴨
+$tofu,bamboo shoot
+$delicate
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Green Bean Tofu with Roasted Chilli Vinaigrette
+@川北涼粉
+$tofu
+$sour,spicy
+$cold,appetizer,rice noodle
+
+!Sichuan Garden
+!四川饭庄
+@Sichuan Family Style Chicken
+@四川家鄉雞
+$chicken
+$salty,spicy
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Stir fried Pinenut Mined Chicken with Lettuce Taco
+@松子雞鬆
+$chicken,lettuce
+$salty,sweet
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Sichuan Pork Dumpling with Roasted Chilli Vinaigrette
+@紅油水餃
+$pork
+$delicate
+$boil,dumpling,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Chilled Noodles with Spicy Sesame Vinaigrette
+@成都涼麵
+$noodle
+$spicy
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Dan Dan Noodles with Minced Pork Chilli Vinaigrette
+@擔擔面
+$noodle,pork
+$spicy,salty
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Steamed Mini Juicy Pork Buns
+@小籠包
+$stuffed bun
+$delicate
+$steam,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Sliced Tender Pork with Garlic Sauce
+@蒜泥白肉
+$pork,garlic
+$spicy,sour
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Garlic Sauce with Shredded Cucumber
+@蒜泥黃瓜
+$cucumber,garlic
+$spicy,sour
+$cold,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Sichuan Vegetable Spring Roll
+@四川春卷
+$vegetable
+$spicy,salty
+$fry,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Pan Seared Pork Dumpling
+@鍋貼
+$pork
+$spicy,salty
+$fry,dumpling,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Vegetable Dumpling
+@蒸素貼
+$vegetable
+$delicate
+$steam,dumpling,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Cantonese Roasted Duck 
+@明爐烤鴨
+$duck
+$sweet
+$roast,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@BBQ Spare Ribs
+@蜜汁排骨
+$rib
+$sweet
+$roast,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Boneless Spare Ribs
+@蜜汁無骨排
+$rib
+$sweet
+$roast,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Boneless Spare Ribs
+@蜜汁無骨排
+$rib
+$sweet
+$roast,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Satay Beef Kebab
+@牛肉串
+$beef
+$sweet
+$fry,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Scallion Pancake
+@蔥油餅
+$scallion,flour
+$salty
+$fry,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Golden Chicken Fingers
+@雞條
+$chicken
+$salty
+$fry,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Fried Chicken Wings
+@雞翼
+$chicken wing
+$salty
+$fry,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Crab Rangoon
+@蟹角
+$crab
+$salty
+$fry,appetizer
+
+!Sichuan Garden
+!四川饭庄
+@Fish Filets with Pickled Mustard Green in Broth
+@酸菜魚片湯
+$fish,pickled vegetable
+$sour,salty
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Seafood Soup
+@海鮮湯
+$fish,pickled vegetable
+$delicate
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@West Lake Beef Chowder
+@西湖牛肉湯
+$beef
+$salty,sour
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Chicken with Asparagus
+@蘆筍雞絲湯
+$chicken
+$sour
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Pork with Sichuan Pickled in Broth
+@榨菜肉絲湯
+$pork,preserved szechuan pickle
+$sour,salty
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Pork with Sichuan Pickled in Broth
+@榨菜肉絲湯
+$pork,preserved szechuan pickle
+$sour,salty
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Chengdu Wonton in Broth
+@清湯抄手
+$wonton
+$delicate
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Hot & Sour Soup
+@酸辣湯
+$pickled vegetable
+$sour,salty
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Mixed Vegetables in Broth
+@素菜湯
+$vegetable
+$delicate
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Chicken Corn Egg Drop Soup
+@玉米蛋花湯
+$egg,corn
+$sweet
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Chicken Corn Egg Drop Soup
+@玉米蛋花湯
+$egg,corn
+$sweet
+$soup
+
+!Sichuan Garden
+!四川饭庄
+@Roasted Lacquer Duck
+@北京鴨
+$duck
+$sweet,salty
+$roast
+
+!Sichuan Garden
+!四川饭庄
+@Camphur Tea Smoked Duck
+@樟茶烤鴨
+$duck,tea
+$sweet
+$roast
+
+!Sichuan Garden
+!四川饭庄
+@Chengdu Roasted Lacquer Duck
+@成都吊爐鴨
+$duck
+$spicy
+$roast
+
+!Sichuan Garden
+!四川饭庄
+@House Hat Crispy Whole Fish
+@四川香辣魚
+$fish
+$spicy,sweet,salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Braised Whole Fish with Sichuan Chilli Miso Sauce
+@豆瓣鮮魚
+$fish
+$spicy bean
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Crispy Whole Fish Filet with Pinenuts
+@松子全魚
+$fish,pinenut
+$sweet,crispy
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Braised Stir Fried Sea Scallops with Chilli Cucumber
+@渝州干貝
+$scallop
+$sweet,salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Braised Fish Filets & Napa Cabbage with Roasted Chilli
+@水煮魚柳
+$fish
+$salty,spicy
+$poach
+
+!Sichuan Garden
+!四川饭庄
+@Braised Whole Fish with Pickled Mustard Greens
+@泡菜全魚
+$fish,pickled vegetable
+$salty,sour
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Stir Fried Prawns with Chengdu Spiced Chilli Cucumber
+@成都大蝦
+$shrimp
+$salty,spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Camphur Tea Smoked Duck with Spring Ginger
+@薑爆鴨絲
+$duck,tea,ginger
+$salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Wok Seared Filet Mignon with Mushroom & Spinach
+@重慶牛柳
+$beef
+$salty,sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sichuan Braised whole Fish with Tofu
+@四川豆瓣魚
+$fish
+$spicy bean
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Chengdu Dry Hot Chicken
+@成都辣子雞
+$chicken,pepper
+$spicy,salty
+$fry
+
+!Sichuan Garden
+!四川饭庄
+@Wok Roasted Prawns with Pepper Spiced Spiced Salt 
+@椒鹽大蝦
+$shrimp
+$spicy,salty
+$fry
+
+!Sichuan Garden
+!四川饭庄
+@Braised Beef Filets & Napa Cabbage with Roasted Chilli
+@水煮牛肉
+$beef
+$spicy,salty
+$poach
+
+!Sichuan Garden
+!四川饭庄
+@Stir Fried Chicken with Spicy Capsicum
+@三椒煸雞
+$chicken,pepper
+$spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Double Cooked Fresh Bacon with Spicy Capsicum
+@四川回鍋肉
+$pork
+$spicy,salty
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Stir Fried Fresh Bacon with Spicy Capsicum
+@爆鹽煎肉
+$pork
+$salty
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Crispy Fish Filet with Sichuan Chilli-Minced Pork
+@家常魚柳
+$fish,pork
+$crispy,salty
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Cellophane Noodles with (Minced Pork, Beef or Chicken)
+@螞蟻上樹
+$vermicelli,pork
+$salty,spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Chef’s Ma Paul Tofo with (Minced Pork, Beef or Chicken) 
+@麻婆豆腐
+$tofu
+$sour,spicy
+$steam
+
+!Sichuan Garden
+!四川饭庄
+@Braised Pan Seared Tofu with Sichuan Chilli-Minced Pork
+@家常豆腐
+$tofu,pork
+$spicy,salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Tangerine Beef
+@陳皮牛柳
+$beef,tangerine
+$sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sesame Beef
+@芝麻牛柳
+$beef,sesame
+$sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sesame Beef
+@芝麻牛柳
+$beef,sesame
+$sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Beef Filets with Spring Onion
+@蔥爆牛柳
+$beef,scallion
+$sweet,salty
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Beef Filets with Spicy Tea Flavored Sauce
+@沙茶牛肉
+$beef,tea
+$sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Chicken Breast & Vegetable
+@四川雞片
+$chicken,vegetable
+$spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@General Tso’s Chicken 
+@左宗棠雞
+$chicken
+$sweet,sour
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Sliced Chicken Breast with Asparagus
+@蘆筍雞片
+$chicken,asparagus
+$sweet,salty
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Shredded Chicken with Rainbow Vegetable
+@三色雞片
+$chicken,vegetable
+$sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Tangerine Chicken
+@陳皮雞塊
+$chicken,tangerine
+$sour,sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Crispy Chicken Breast with Citrus Lemon Sauce
+@檸檬雞塊
+$chicken,lemon
+$crispy,sour
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sesame Chicken
+@芝麻雞塊
+$sesame,chicken
+$sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sweet & Pungent Chicken
+@甜酸幾條
+$chicken
+$sour,sweet,spicy
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Chicken with Spicy Garlic Sauce 
+@魚香雞絲
+$chicken
+$yu hsiang,spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Chicken with Roasted Chilli & Peanut (Kung Pao)
+@宮保雞丁
+$chicken,peanut
+$kung pao,spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Chicken with Cashew Nuts
+@腰果雞丁
+$chicken,cashew
+$sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Steamed Whole Fish with Ginger & Scallions
+@清蒸全魚
+$fish,ginger,scallion
+$delicate
+$steam
+
+!Sichuan Garden
+!四川饭庄
+@Sweet & Pungent Crispy Fish Filets
+@糖醋魚柳
+$fish
+$sweet,sour,crispy
+$sauteed
+
+!Sichuan Garden
+!四川饭庄
+@Crispy Tangerine Prawns
+@陳皮大蝦
+$tangerine,shrimp
+$crispy,sweet
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Prawns with Black Been Sauce
+@豆豉大蝦
+$shrimp
+$spicy bean
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Prawns with Light Sweet Citrus Sauce
+@三絲明蝦
+$shrimp
+$delicate
+$sauteed
+
+!Sichuan Garden
+!四川饭庄
+@Grand Marnier Prawns
+@果汁明蝦
+$shrimp
+$sweet
+$sauteed
+
+!Sichuan Garden
+!四川饭庄
+@Sesame Prawns
+@芝麻大蝦
+$sesame,shrimp
+$sweet
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Prawns with Spicy Garlic Sauce
+@魚香大蝦
+$shrimp
+$yu hsiang,spicy
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Prawns with Roasted Chilli & Peanut (Kung Pao)
+@宮保大蝦
+$shrimp,peanut
+$kung pao,spicy
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Prawns & Vegetables with Toasted Rice in Sizzling Platter (Wah Bar)
+@鍋巴明蝦
+$shrimp,vegetable
+$crispy,sweet
+$fry
+
+!Sichuan Garden
+!四川饭庄
+@Wok Roasted Sea Scallops with Pepper Spiced Salt
+@椒鹽干貝
+$scallop
+$salty,spicy
+$fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Sea Scallops with Spicy Garlic Sauce
+@魚香干貝
+$scallop
+$yu hsiang
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Sea Scallops with Black Pepper Corn Sauce
+@黒椒干貝
+$scallop,pepper
+$salty,sweet
+$pan fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Baby Shrimps with Rainbow Julienne Vegetable
+@三色蝦仁
+$shrimp,vegetable
+$delicate
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Beef Filets with Spicy Tea Flavored Sauce
+@沙茶牛肉
+$beef,tea
+$spicy,sweet
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Beef Filets with Shiitake & Bamboo Shoot 
+@雙冬牛肉
+$bamboo shoot,beef
+$salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Filet Mignon with Black Peppercorn Sauce
+@黒椒牛柳
+$beef,pepper
+$salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Beef Filets &Toasted Rice in Sizzling Platter (Wah Bar)
+@鍋巴牛肉
+$beef
+$crispy,sweet
+$fry
+
+!Sichuan Garden
+!四川饭庄
+@Pepper Steak
+@青椒牛柳
+$pepper,beef
+$spicy,salty
+$sauteed
+
+!Sichuan Garden
+!四川饭庄
+@Beef with Broccoli
+@芥蘭牛肉
+$broccoli,beef
+$delicate
+$steam
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Shredded Beef with Julienne Carrots
+@干燒牛肉絲
+$beef,carrot
+$salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Smoky Hot Shredded Beef with Cayenne Chilli
+@小椒牛肉絲
+$beef,pepper
+$salty,spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Pork with Sweet Red Pepper
+@甜椒肉絲
+$pork,pepper
+$sweet,spicy
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Pork with Peking Plum Sauce 
+@京醬肉絲
+$pork
+$sweet,sour,salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Pork with Spiced Tofu & Cayenne Chilli
+@香干肉絲
+$tofu,pork
+$spicy,salty
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Shredded Pork with Spicy Garlic Sauce
+@魚香肉絲
+$pork,garlic
+$yu hsiang
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@MooShu with Crepes & Plum Sauce
+@木須肉
+$shrimp
+$moo shi
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sweet & Pungent Pork 
+@甜酸肉
+$pork
+$sweet,sour
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Fresh Pea Pods and Water Chestnuts 
+@雪豆馬蹄
+$snow pea
+$sweet,salty
+$sauteed
+
+!Sichuan Garden
+!四川饭庄
+@Braised Shiitake with Baby Bok Choy 
+@冬菇菜膽
+$vegetable,mushroom
+$delicate
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Field Green in Season 
+@清炒時菜
+$vegetable
+$delicate
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Baby Eggplant with Spicy Garlic Sauce
+@魚香茄子
+$eggplant
+$yu hsiang
+$stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Mixed Garden Vegetables
+@什錦素菜
+$vegetable
+$sweet,salty
+$sauteed
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Spinach with Garlic
+@蒜子菠菜
+$garlic,spinach
+$delicate
+$sauteed
+
+!Sichuan Garden
+!四川饭庄
+@Broccoli Spears with Spicy Garlic Sauce
+@魚香芥蘭
+$broccoli,garlic
+$yu hsiang,spicy
+$braise
+ 
+!Sichuan Garden
+!四川饭庄
+@Sautéed String Beans with Spring Bamboo Shoots 
+@干煸雙素
+$string bean,bamboo shoot
+$delicate
+$steam
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed String Beans with Chengdu City Spiced
+@干煸四季豆
+$string bean
+$spicy,salty
+$braise
+
+!Sichuan Garden
+!四川饭庄
+@Sautéed Shredded Potatoes with Green Peppers
+@青椒土豆絲
+$potato,pepper
+$salty,spicy
+$braise
+	
+!Sichuan Garden
+!四川饭庄
+@House Special Fried Rice
+@本樓炒飯
+$strange
+$sweet,spicy
+$fried rice
+
+!Sichuan Garden
+!四川饭庄
+@Fried Rice (Choice of: Roast Pork, Chicken, Beef, Shrimp, or Vegetable)
+@各式炒飯
+$pork,beef,shrimp,vegetable
+$sweet,spicy,salty
+$fried rice
+
+!Sichuan Garden
+!四川饭庄
+@Pan Fried Noodles with Seafood
+@海鮮兩面黃
+$seafood,egg
+$delicate
+$noodle,stir-fry
+
+!Sichuan Garden
+!四川饭庄
+@Sichuan Beef Soup with Soft Noodles
+@川味牛肉湯麵
+$beef
+$spicy,salty
+$noodle
+
+!Sichuan Garden
+!四川饭庄
+@Mixed Seafood Soup with Soft Noodles
+@海鮮湯麵
+$seafood
+$delicate
+$soup,noodle
+
+!Sichuan Garden
+!四川饭庄
+@Sichuan Sliced Pork Chop with Noodles in Soup
+@川味排骨湯麵
+$rib
+$spicy,salty
+$noodle,soup
+
+!New Shanghai Restaurant
+!京川酒家
+@Peking Duck
+@北京鴨
+$duck
+$salty
+$cold
+
+!New Shanghai Restaurant
+!京川酒家
+@Smoked Duck with Tea Favor
+@樟茶鴨
+$duck
+$salty,sweet
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Fish with Spicy Bean Sauce
+@豆瓣鮮魚
+$fish
+$spicy bean
+$poach
+
+!New Shanghai Restaurant
+!京川酒家
+@Whole fish with Pickled Vegetable
+@酸菜全魚
+$fish,pickled vegetable
+$sour,salty
+$poach
+
+!New Shanghai Restaurant
+!京川酒家
+@Crispy Whole Fish with Sweet & Sour Sauce
+@松鼠全魚
+$fish
+$sour,sweet
+$poach
+
+!New Shanghai Restaurant
+!京川酒家
+@Chung Du Spicy Chicken
+@成都辣子雞
+$pepper,checken
+$salty,spicy
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Zigong Chicken
+@自貢雞
+$checken
+$salty,sweet
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Scallop and Black Pepper Sauce
+@黑椒乾貝
+$black pepper,scallop
+$salty
+$pan fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Mongolian Beef
+@蒙古牛
+$beef
+$sweet
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Cumin Lamb
+@孜然羊肉
+$lamb,cumin
+$salty,spicy
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Scallion Lamb
+@蔥爆羊肉
+$lamb,scallion
+$salty,sweet
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Peking Style Braised Fish
+@北京紅燒鮮魚
+$fish
+$salty,sweet
+$braise
+
+!New Shanghai Restaurant
+!京川酒家
+@Sauteed Triple Delights
+@炒三鮮
+$potato,pepper,eggplant
+$salty,sweet
+$sauteed
+
+!New Shanghai Restaurant
+!京川酒家
+@Szechuan Twice Cooked Pork Belly
+@四川回鍋肉
+$pork
+$salty,sweet
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Roasted Duck with Taro
+@磨芋燒鴨
+$duck,taro
+$salty,sweet
+$braise
+
+!New Shanghai Restaurant
+!京川酒家
+@Diced Rabbit with Chef’s Sauce
+@紅袍兔丁
+$rabbit
+$sweet
+$casserole
+
+!New Shanghai Restaurant
+!京川酒家
+@Steamed fish Fillet with Chef’s Sauce in Hot Pot
+@沸騰魚
+$fish
+$delicate
+$hot pot
+
+!New Shanghai Restaurant
+!京川酒家
+@Szechuan Style Frog
+@飄香田雞
+$frog
+$salty,spicy
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Szechuan Style Frog
+@回鍋臘肉
+$pork
+$salty,sweet
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Braised Cow’s Tongue
+@紅燒牛舌
+$beef tongue
+$salty
+$braise
+
+!New Shanghai Restaurant
+!京川酒家
+@Spicy Diced Frog
+@辣子田雞
+$frog
+$salty,spicy
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Boiled Fish fillet & Red Pepper Bean Sprouts
+@水煮魚
+$fish
+$salty,spicy
+$poach
+
+!New Shanghai Restaurant
+!京川酒家
+@Braised Fresh Eel
+@紅燒鮮鱔
+$eel
+$salty
+$braise
+
+!New Shanghai Restaurant
+!京川酒家
+@Vermicelli & Minced Pork in Salt Bean Sauce
+@螞蟻上樹
+$vermicelli,pork
+$salty,spicy
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Vermicelli & Minced Pork in Salt Bean Sauce
+@螞蟻上樹
+$vermicelli,pork
+$salty,spicy
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Vermicelli & Minced Pork in Salt Bean Sauce
+@香乾肉絲
+$pork,tofu
+$salty,sweet
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Shredded Pork with Bamboo Shoot
+@笋尖肉絲
+$bamboo shoot,pork
+$salty,spicy
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Yu Hsiang Shredded Pork
+@魚香肉絲
+$pork
+$yu hsiang
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Lobster Sauce
+@龍糊
+$seafood
+$delicate
+$poach
+
+!New Shanghai Restaurant
+!京川酒家
+@Fried Salted Pork Belly
+@鹽煎肉
+$pork
+$salty
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Boiled Pork Fillet with Red Pepper & Bean Sprouts
+@水煮肉片
+$pork,pepper,sprout
+$salty,spicy
+$poach
+
+!New Shanghai Restaurant
+!京川酒家
+@Moo Shi Pork
+@木須肉
+$pork
+$moo shi
+$stir-fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Spicy Salt Pork Chop
+@椒鹽排骨
+$rib,pork
+$salty,spicy
+$fry
+
+!New Shanghai Restaurant
+!京川酒家
+@Spicy Pork Feet
+@麻辣豬蹄
+$pork feet
+$salty,spicy
+$braise
+
+ 

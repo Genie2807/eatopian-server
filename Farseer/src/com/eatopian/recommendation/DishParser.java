@@ -1,9 +1,6 @@
 package com.eatopian.recommendation;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +15,7 @@ import java.util.List;
 public class DishParser {
 
     public static void main(String[] args) {
-        readFileByLines("test.txt");
+        readFileByLines("genie.txt");
     }
 
     public static void readFileByLines(String fileName) {
@@ -27,7 +24,8 @@ public class DishParser {
         BufferedReader reader = null;
         Dish currentDish=new Dish();   //just a dummy.
         try {
-            reader = new BufferedReader(new FileReader(file));
+            InputStreamReader read = new InputStreamReader (new FileInputStream(file),"UTF-8");
+            reader = new BufferedReader(read);
             String tempString = null;
             int line = 1;
             while ((tempString = reader.readLine()) != null) {
@@ -60,20 +58,36 @@ public class DishParser {
                         break;
                     case 5:
                         if(tempString.startsWith("$")&&line==5) {
-                            currentDish.setIngredientTagList(new ArrayList<String>(Arrays.asList(tempString.substring(1).split(","))));
+                            String[] list=tempString.substring(1).split(",");
+                            ArrayList<String> temp=new ArrayList<String>();
+                            for(String s:list) {
+                                temp.add(s.trim().toLowerCase());
+                            }
+                            currentDish.setIngredientTagList(temp);
                             line=6;
                         }
                         break;
                     case 6:
                         if(tempString.startsWith("$")&&line==6) {
-                            currentDish.setTasteTagList(new ArrayList<String>(Arrays.asList(tempString.substring(1).split(","))));
+                            String[] list=tempString.substring(1).split(",");
+                            ArrayList<String> temp=new ArrayList<String>();
+                            for(String s:list) {
+                                temp.add(s.trim().toLowerCase());
+                            }
+                            currentDish.setTasteTagList(temp);
                             line=7;
                         }
                         break;
                     case 7:
                         if(tempString.startsWith("$")&&line==7) {
-                            currentDish.setCookingTagList(new ArrayList<String>(Arrays.asList(tempString.substring(1).split(","))));
+                            String[] list=tempString.substring(1).split(",");
+                            ArrayList<String> temp=new ArrayList<String>();
+                            for(String s:list) {
+                                temp.add(s.trim().toLowerCase());
+                            }
+                            currentDish.setCookingTagList(temp);
                             dao.addDish(currentDish);
+                            //System.out.println(currentDish.getRestaurantChineseName());
                             line=1;
                         }
                         break;

@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cded38d1-12bd-4639-a399-c036e7145b66" name="Default" comment="" />
+    <list default="true" id="cded38d1-12bd-4639-a399-c036e7145b66" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/SimilarityReader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sb.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="Farseer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Similarity.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1369687109549" ignored="false" />
-    <file path="/Dummy.txt" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1369687634962" ignored="false" />
-    <file path="/fragment.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1369622340990" ignored="false" />
-    <file path="/DishParser.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1369623528798" ignored="false" />
+    <file path="/Similarity.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370719871460" ignored="false" />
+    <file path="/Dummy.txt" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370829451197" ignored="false" />
+    <file path="/fragment.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370932069884" ignored="false" />
+    <file path="/DishParser.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370714409773" ignored="false" />
     <file path="/Dish.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1369622953600" ignored="false" />
-    <file path="/Mongodb.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1369622400089" ignored="false" />
+    <file path="/Mongodb.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370718843924" ignored="false" />
+    <file path="/DAO.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370720270193" ignored="false" />
+    <file path="/SimilarityReader.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370723091029" ignored="false" />
+    <file path="/Recommend.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370943966447" ignored="false" />
+    <file path="/sb.txt" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370933319715" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +73,53 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java" line="114" class="com.eatopian.recommendation.Similarity" package="com.eatopian.recommendation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java" line="66" class="com.eatopian.recommendation.Similarity" package="com.eatopian.recommendation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" line="77" class="com.eatopian.recommendation.Recommend" package="com.eatopian.recommendation">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -71,15 +130,61 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Similarity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Similarity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="73" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.5322581">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DAO.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="110" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimilarityReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/SimilarityReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="30" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="similarity.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/similarity.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="75" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Recommend.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="26" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2819#2833#0" expanded="true" />
-                <element signature="e#3280#3298#0" expanded="true" />
+                <element signature="e#697#705#0" expanded="true" />
+                <element signature="e#2427#2435#0" expanded="true" />
+                <element signature="e#2686#2692#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sb.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sb.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="24" selection-start="59" selection-end="59" vertical-scroll-proportion="0.11046512">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,7 +192,7 @@
       <file leaf-file-name="DishParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="25" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
+            <state line="30" column="66" selection-start="652" selection-end="909" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,13 +200,13 @@
       </file>
       <file leaf-file-name="test.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.txt">
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="47" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -114,19 +219,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dish.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Mongodb.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="26" selection-start="3777" selection-end="3777" vertical-scroll-proportion="0.0">
+            <state line="224" column="0" selection-start="7478" selection-end="7478" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,10 +247,14 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/test.txt" />
-        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java" />
         <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java" />
         <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java" />
         <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/SimilarityReader.java" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" />
+        <option value="$PROJECT_DIR$/sb.txt" />
       </list>
     </option>
   </component>
@@ -190,7 +290,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -247,6 +346,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -264,11 +364,11 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.DishParser">
+  <component name="RunManager" selected="Application.Recommendation">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -281,6 +381,19 @@
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -309,19 +422,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -400,9 +500,51 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="SimilarityReader" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.eatopian.recommendation.SimilarityReader" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Farseer" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Recommendation" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.eatopian.recommendation.Recommend" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Farseer" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Application.DishParser" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SimilarityReader" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Recommendation" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -464,25 +606,25 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39965695" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3962264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67066896" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.6740995" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -551,52 +693,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Farseer.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="23" selection-start="2261" selection-end="2261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="26" selection-start="3777" selection-end="3777" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2819#2833#0" expanded="true" />
-            <element signature="e#3280#3298#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Farseer.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="68" column="58" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0">
@@ -607,11 +703,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2819#2833#0" expanded="true" />
-            <element signature="e#3280#3298#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -629,21 +721,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="25" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Farseer.iml">
@@ -653,28 +738,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java">
+    <entry file="jar://$PROJECT_DIR$/bin/lib/mongo-2.10.1.jar!/com/mongodb/DBCollection.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="349" selection-end="349" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="103" column="0" selection-start="5929" selection-end="5929" vertical-scroll-proportion="0.3559322" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="26" selection-start="3777" selection-end="3777" vertical-scroll-proportion="0.0">
+        <state line="47" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="73" selection-start="2508" selection-end="2508" vertical-scroll-proportion="0.5322581">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/SimilarityReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="30" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/similarity.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="75" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="0" selection-start="7478" selection-end="7478" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="110" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="66" selection-start="652" selection-end="909" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="26" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2819#2833#0" expanded="true" />
-            <element signature="e#3280#3298#0" expanded="true" />
+            <element signature="e#697#705#0" expanded="true" />
+            <element signature="e#2427#2435#0" expanded="true" />
+            <element signature="e#2686#2692#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sb.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="59" selection-end="59" vertical-scroll-proportion="0.11046512">
+          <folding />
         </state>
       </provider>
     </entry>

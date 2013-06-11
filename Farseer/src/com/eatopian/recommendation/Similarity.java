@@ -53,8 +53,8 @@ public class Similarity {
 		double len2 = 0.0;
 		for (int i = 0; i < vSize; i++) {
 			res += v1[i] * v2[i];
-			len1 += v1[i] * v2[i];
-			len2 += v1[i] * v2[i];
+			len1 += v1[i] * v1[i];
+			len2 += v2[i] * v2[i];
 		}
 		res = res / Math.sqrt(len1) / Math.sqrt(len2);
 		return res;
@@ -64,12 +64,15 @@ public class Similarity {
 		double similarityIngredient = 0;
 		double similarityTaste = 0;
 		double similarityCooking = 0;
+        System.out.println("1");
 		similarityIngredient = this.getVectorProduct(
 				dish1.getIngredientTagList(), dish2.getIngredientTagList(),
 				this.IngredientMap);
-		similarityTaste = this.getVectorProduct(dish1.getTasteTagList(),
+        System.out.println("2");
+        similarityTaste = this.getVectorProduct(dish1.getTasteTagList(),
 				dish2.getTasteTagList(), this.TasteMap);
-		similarityCooking = this.getVectorProduct(dish1.getCookingTagList(),
+        System.out.println("3");
+        similarityCooking = this.getVectorProduct(dish1.getCookingTagList(),
 				dish2.getCookingTagList(), this.CookingMap);
 		double similarity = similarityTaste * 0.5 + similarityCooking * 0.25
 				+ similarityIngredient * 0.25;
@@ -90,7 +93,7 @@ public class Similarity {
 		private ObjectId dishID;
 
 		public PriorityDish(double similarity, ObjectId dishID) {
-			this.similarity = 0.0;
+			this.similarity = similarity;
 			this.dishID = dishID;
 		}
 
@@ -102,9 +105,13 @@ public class Similarity {
 			this.similarity = similarity;
 		}
 
+        public String toString() {
+            return this.getDishID()+"::"+Double.toString(this.similarity);
+        }
+
 	}
 
-	private Map<ObjectId, Double> getAllSimilarityForDish(Dish dish1) {
+	private Map<String, Double> getAllSimilarityForDish(Dish dish1) {
 		PriorityQueue<PriorityDish> heap = new PriorityQueue<PriorityDish>(20,
 				new Comparator<PriorityDish>() {
 					@Override
@@ -117,21 +124,24 @@ public class Similarity {
 					}
 				});
 		for (Dish dish2 : this.allDish) {
+            System.out.println(dish1.getDishChineseName()+"::"+dish2.getDishChineseName());
 			double s = this.getSimilarity(dish1, dish2);
+            System.out.println(s);
 			heap.add(new PriorityDish(s, dish2.getDishID()));
+            System.out.println(heap.toString());
 		}
-		Map<ObjectId, Double> map = new HashMap<ObjectId, Double>();
+		Map<String, Double> map = new HashMap<String, Double>();
 		int sizeH = heap.size();
 		for (int i = 0; i < 20 && i < sizeH; i++) {
 			PriorityDish pd = heap.poll();
-			map.put(pd.getDishID(), pd.getSimilarity());
+			map.put(pd.getDishID().toString(), pd.getSimilarity());
 		}
 		return map;
 	}
 
 	private void getAllSimilarityForAllDishes() {
 		for (Dish dish1 : this.allDish) {
-			Map<ObjectId, Double> map = getAllSimilarityForDish(dish1);
+			Map<String, Double> map = getAllSimilarityForDish(dish1);
 			this.dao.addDishSimilarity(dish1.getDishID(), map);
 		}
 	}
