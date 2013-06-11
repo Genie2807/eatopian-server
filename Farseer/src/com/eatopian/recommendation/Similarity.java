@@ -104,7 +104,7 @@ public class Similarity {
 
 	}
 
-	private Map<ObjectId, Double> getAllSimilarityForDish(Dish dish1) {
+	private Map<String, Double> getAllSimilarityForDish(Dish dish1) {
 		PriorityQueue<PriorityDish> heap = new PriorityQueue<PriorityDish>(20,
 				new Comparator<PriorityDish>() {
 					@Override
@@ -120,18 +120,19 @@ public class Similarity {
 			double s = this.getSimilarity(dish1, dish2);
 			heap.add(new PriorityDish(s, dish2.getDishID()));
 		}
-		Map<ObjectId, Double> map = new HashMap<ObjectId, Double>();
+		
+		Map<String, Double> map = new HashMap<String, Double>();
 		int sizeH = heap.size();
 		for (int i = 0; i < 20 && i < sizeH; i++) {
 			PriorityDish pd = heap.poll();
-			map.put(pd.getDishID(), pd.getSimilarity());
+			map.put(pd.getDishID().toString(), pd.getSimilarity());
 		}
 		return map;
 	}
 
 	private void getAllSimilarityForAllDishes() {
 		for (Dish dish1 : this.allDish) {
-			Map<ObjectId, Double> map = getAllSimilarityForDish(dish1);
+			Map<String, Double> map = getAllSimilarityForDish(dish1);
 			this.dao.addDishSimilarity(dish1.getDishID(), map);
 		}
 	}

@@ -95,6 +95,8 @@ public class Mongodb implements DAO {
 				targetDish = new Dish(dishID,
 						(String) dbObject.get("dishName"),
 						(String) dbObject.get("dishChineseName"));
+				targetDish.setRestaurantName((String) dbObject.get("restaurantName"));
+				targetDish.setRestaurantChineseName((String) dbObject.get("restaurantChineseName"));
 				BasicDBList ingredientList = (BasicDBList) dbObject
 						.get("Ingredient");
 				BasicDBList tasteList = (BasicDBList) dbObject
@@ -122,6 +124,8 @@ public class Mongodb implements DAO {
 				Dish targetDish = new Dish( (ObjectId) dbObject.get("_id"),
 						(String) dbObject.get("dishName"),
 						(String) dbObject.get("dishChineseName"));
+				targetDish.setRestaurantName((String) dbObject.get("restaurantName"));
+				targetDish.setRestaurantChineseName((String) dbObject.get("restaurantChineseName"));
 				BasicDBList ingredientList = (BasicDBList) dbObject
 						.get("Ingredient");
 				BasicDBList tasteList = (BasicDBList) dbObject
@@ -147,6 +151,8 @@ public class Mongodb implements DAO {
 		DBCollection coll = mongodb.getCollection("Dish");		
 		BasicDBObject doc = new BasicDBObject("dishName", dish.getDishName())
 		.append("dishChineseName", dish.getDishChineseName())
+		.append("restaurantName", dish.getRestaurantName())
+		.append("restaurantChineseName", dish.getRestaurantChineseName())
 		.append("Ingredient", dish.getIngredientTagList())
 		.append("Taste", dish.getTasteTagList())
 		.append("Cooking", dish.getCookingTagList());
@@ -186,9 +192,9 @@ public class Mongodb implements DAO {
 	}
 
 	@Override
-	public boolean addDishSimilarity(ObjectId dishID, Map<ObjectId, Double> map) {
+	public boolean addDishSimilarity(ObjectId dishID, Map<String, Double> map) {
 		// TODO Auto-generated method stub
-		DBCollection coll = mongodb.getCollection("Similarity_Table");		
+		DBCollection coll = mongodb.getCollection("Similarity_Table");
 		BasicDBObject doc = new BasicDBObject("_id", dishID)
 		.append("similarity", map);	
 		if(coll.insert(doc) != null)
@@ -196,4 +202,23 @@ public class Mongodb implements DAO {
 		return false;
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public Map<String, Double> getDishSimilarity(ObjectId dishID) {
+		// TODO Auto-generated method stub
+		DBCollection coll = mongodb.getCollection("Similarity_Table");
+		BasicDBObject query = new BasicDBObject("_id", dishID);
+		DBCursor cursor = coll.find(query);
+		Map<String, Double> map = null;
+		try {
+			while (cursor.hasNext()) {
+				DBObject dbObject = cursor.next();
+				map = (Map<String, Double>) dbObject.get("similarity");
+			}
+		} finally {
+			cursor.close();
+		}
+		return map;
+	}
+	
 }

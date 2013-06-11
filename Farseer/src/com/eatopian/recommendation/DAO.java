@@ -17,6 +17,8 @@ public interface DAO {
 	
 	List<Dish> getAllDishes();
 	
+	Map<String, Double> getDishSimilarity(ObjectId dishId);
+	
 	
 	boolean addDish(Dish dish);
 	
@@ -26,6 +28,6 @@ public interface DAO {
 	
 	boolean addCookingTag(String tagName);
 	
-	boolean addDishSimilarity(ObjectId dishID, Map<ObjectId, Double> map);
+	boolean addDishSimilarity(ObjectId dishID, Map<String, Double> map);
 	
 }

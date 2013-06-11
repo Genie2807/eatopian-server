@@ -1,7 +1,6 @@
 package com.eatopian.recommendation;
 
 import java.util.List;
-
 import org.bson.types.ObjectId;
 
 public class Dish {
