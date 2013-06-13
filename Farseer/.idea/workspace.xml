@@ -2,27 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cded38d1-12bd-4639-a399-c036e7145b66" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/SimilarityReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sb.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/RecommendHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/web/WebExperiment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/sun-jaxws.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Farseer.iml" afterPath="$PROJECT_DIR$/Farseer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" afterPath="$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Farseer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Similarity.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370719871460" ignored="false" />
-    <file path="/Dummy.txt" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370829451197" ignored="false" />
-    <file path="/fragment.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370932069884" ignored="false" />
+    <file path="/Dummy.txt" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371064418259" ignored="false" />
+    <file path="/fragment.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371071858228" ignored="false" />
     <file path="/DishParser.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370714409773" ignored="false" />
     <file path="/Dish.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1369622953600" ignored="false" />
     <file path="/Mongodb.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370718843924" ignored="false" />
     <file path="/DAO.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370720270193" ignored="false" />
     <file path="/SimilarityReader.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370723091029" ignored="false" />
-    <file path="/Recommend.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370943966447" ignored="false" />
+    <file path="/Recommend.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371069547375" ignored="false" />
     <file path="/sb.txt" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1370933319715" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/application_5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763119" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-facesconfig_1_2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-jsptaglibrary_2_1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-app_2_4.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-common_3_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/orm_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/application-client_1_4.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/application-client_6.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/ejb-jar_3_1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/spring-form.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/j2ee_web_services_client_1_1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jspxml.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jspxml.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/relaxng.rng" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_web_services_client_1_3.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/persistence.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/application-client_5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/ejb-jar_3_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_web_services_1_3.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_6.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-fragment_3_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jsp_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_web_services_1_2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/application_6.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/connector_1_6.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-jsptaglibrary_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-app_2_5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_web_services_client_1_2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/settings-1.0.0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/profiles-1.0.0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic_2_0.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl-fn.taglib.xml" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/composite.taglib.xml" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763120" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_1_2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_1_1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf-ui-2_0.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesconfig_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jsf_core_2_0.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl.core.facelets.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl.fn.facelets.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_web_services_1_2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/javaee_web_services_client_1_2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facelettaglibrary_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/mojarra_ext.taglib.xml" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-facesuicomponent_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/html_basic.taglib.xml" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/web-partialresponse_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/jstl-core.taglib.xml" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JSF/lib/jsf-support.jar!/resources/schemas/facelets_jsf_core.taglib.xml" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-1_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/XMLSchema-instance.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/FlexCompilerSchema.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.7.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-transitional.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.6.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xml.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763121" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.2.0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.3.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xslt-2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/ejb-jar_2_1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xinclude.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763122" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/application_1_4.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763123" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763123" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xsl" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763123" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.1.5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/documentation.xml" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/connector_1_5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.8.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-strict.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/xpath/lib/xpath.jar!/org/intellij/lang/xpath/xslt/resources/xslt-schema.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jsp_2_2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.7.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/j2ee_1_4.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763124" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.6.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-app_3_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.4.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/persistence_2_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.3.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/spring.tld" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/catalog.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.2.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/lib/idea.jar!/standardSchemas/html5/xhtml5.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/flex/lib/FlexSupport.jar!/schemas/AIR_Descriptor.3.1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763125" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/jsp_2_1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763126" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JBoss/lib/jbossIntegration.jar!/descriptors/jboss-deployment-structure-1_1.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763127" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/orm_1_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763127" ignored="false" />
+    <file path="$APPLICATION_HOME_DIR$/plugins/JBoss/lib/jbossIntegration.jar!/descriptors/jboss-deployment-structure-1_0.xsd" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371063763127" ignored="false" />
+    <file path="/RecommendHelper.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371064250419" ignored="false" />
+    <file path="/HelloWorld.java" changelist="cded38d1-12bd-4639-a399-c036e7145b66" time="1371071495410" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +202,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" line="77" class="com.eatopian.recommendation.Recommend" package="com.eatopian.recommendation">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" line="85" class="com.eatopian.recommendation.Recommend" package="com.eatopian.recommendation">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -130,19 +228,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Similarity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DAO.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="110" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+            <state line="20" column="4" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -160,7 +249,7 @@
       <file leaf-file-name="similarity.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/similarity.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="75" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+            <state line="3" column="24" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -169,22 +258,40 @@
       <file leaf-file-name="Recommend.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="26" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
+            <state line="95" column="47" selection-start="3144" selection-end="3144" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#697#705#0" expanded="true" />
-                <element signature="e#2427#2435#0" expanded="true" />
-                <element signature="e#2686#2692#0" expanded="true" />
+                <element signature="e#2898#2906#0" expanded="true" />
+                <element signature="e#2965#2971#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sb.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sb.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sb.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="59" selection-end="59" vertical-scroll-proportion="0.11046512">
+            <state line="2" column="24" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RecommendHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/RecommendHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebExperiment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/web/WebExperiment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="44" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.3716012">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,37 +299,16 @@
       <file leaf-file-name="DishParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="66" selection-start="652" selection-end="909" vertical-scroll-proportion="0.0">
+            <state line="30" column="62" selection-start="652" selection-end="909" vertical-scroll-proportion="0.0">
               <folding />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Farseer.iml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Farseer.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mongodb.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="0" selection-start="7478" selection-end="7478" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -253,8 +339,14 @@
         <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java" />
         <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java" />
         <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/SimilarityReader.java" />
-        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" />
         <option value="$PROJECT_DIR$/sb.txt" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/RecommendHelper.java" />
+        <option value="$PROJECT_DIR$/src/example/HelloWorldClient.java" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java" />
+        <option value="$PROJECT_DIR$/src/example/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/src/example/WebExperiment.java" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/web/example/WebExperiment.java" />
+        <option value="$PROJECT_DIR$/src/com/eatopian/recommendation/web/WebExperiment.java" />
       </list>
     </option>
   </component>
@@ -290,6 +382,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -344,10 +438,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Farseer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Farseer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="recommendation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -368,7 +482,15 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.Recommendation">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.eatopian.recommendation.web" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="LAST_HOST" value="http://localhost:9000/" />
+  </component>
+  <component name="RunManager" selected="Application.WebExperiment">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
@@ -540,11 +662,29 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="4">
+    <configuration default="false" name="WebExperiment" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="com.eatopian.recommendation.web.WebExperiment" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Farseer" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Application.DishParser" />
       <item index="2" class="java.lang.String" itemvalue="Application.SimilarityReader" />
       <item index="3" class="java.lang.String" itemvalue="Application.Recommendation" />
+      <item index="4" class="java.lang.String" itemvalue="Application.WebExperiment" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -604,6 +744,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3962264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -612,8 +753,10 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32761577" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2813036" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933104" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -621,10 +764,9 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24924242" sideWeight="0.6740995" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32590052" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -695,45 +837,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="58" selection-start="1762" selection-end="1762" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="146" selection-end="146" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Mongodb.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Farseer.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="79" selection-end="79" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -745,9 +866,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Dish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="47" column="0" selection-start="944" selection-end="944" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Similarity.java">
@@ -766,7 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/similarity.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="75" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
+        <state line="3" column="24" selection-start="55" selection-end="55" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -778,36 +897,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="110" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
+        <state line="30" column="62" selection-start="652" selection-end="909" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DishParser.java">
+    <entry file="file://$PROJECT_DIR$/sb.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="66" selection-start="652" selection-end="909" vertical-scroll-proportion="0.0">
+        <state line="2" column="24" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/RecommendHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="4" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/Recommend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="26" selection-start="2722" selection-end="2722" vertical-scroll-proportion="0.0">
+        <state line="95" column="47" selection-start="3144" selection-end="3144" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#697#705#0" expanded="true" />
-            <element signature="e#2427#2435#0" expanded="true" />
-            <element signature="e#2686#2692#0" expanded="true" />
+            <element signature="e#2898#2906#0" expanded="true" />
+            <element signature="e#2965#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sb.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/eatopian/recommendation/web/WebExperiment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="59" selection-end="59" vertical-scroll-proportion="0.11046512">
-          <folding />
+        <state line="32" column="44" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.3716012">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

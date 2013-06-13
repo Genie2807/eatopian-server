@@ -18,7 +18,7 @@ import java.util.Set;
 public class Recommend {
     private DAO dao= null;
 
-    private static class UserProfile {
+    public static class UserProfile {
         public String getUserName() {
             return userName;
         }
@@ -34,12 +34,20 @@ public class Recommend {
             this.userLiked.add(liked);
         }
 
+        public void addUserLikedList(List<String> likedList) {
+            this.userLiked.addAll(likedList);
+        }
+
         public Set<String> getUserLiked() {
             return this.userLiked;
         }
 
         public UserProfile(String fileName) {
             this.readFromFile(fileName);
+        }
+
+        public UserProfile() {
+            this.userName="";
         }
 
         public void readFromFile(String fileName) {
@@ -75,11 +83,12 @@ public class Recommend {
     }
 
     public List<Dish> basedOn(UserProfile user) {
-        List<String> allRelatedDishes=new ArrayList<String>();
+        Set<String> allRelatedDishesSet=new HashSet<String>();
         for(String currentDish:user.getUserLiked()) {
-            allRelatedDishes.addAll(this.dao.getDishSimilarity(new ObjectId(currentDish)).keySet());
+            allRelatedDishesSet.addAll(this.dao.getDishSimilarity(new ObjectId(currentDish)).keySet());
         }
-        System.out.println(allRelatedDishes);
+        System.out.println(allRelatedDishesSet);
+        List<String> allRelatedDishes=new ArrayList<String>(allRelatedDishesSet);
         List<Dish> res=new ArrayList<Dish>();
         while(res.size()<5) {
             double d=Math.random();
