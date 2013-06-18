@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   <version>0.1-SNAPSHOT</version>
   
-  <name>Eatopian Servicee</name>
+  <name>Eatopian Service</name>
   
   <dependencies>
     <dependency>
