@@ -25,7 +25,7 @@ public class MyUserService implements UserService {
 	public String post(User user) {
         
         
-		return user.getUserName + " " + user.getPassword();
+		return user.getUsername() + " " + user.getPassword();
 	}
 	
 }
