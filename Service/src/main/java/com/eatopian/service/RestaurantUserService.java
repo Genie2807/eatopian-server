@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
 import com.eatopian.entity.User;
 
 @Path("users")
-public class MyUserService implements UserService {
+public class RestaurantUserService implements UserService {
 	
 	@GET
     @Produces(MediaType.TEXT_PLAIN)
