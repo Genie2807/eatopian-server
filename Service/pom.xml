@@ -50,7 +50,8 @@
       <artifactId>tomcat7-maven-plugin</artifactId>
       <version>2.1</version>
       <configuration>
-        <url>http://localhost:8080/manager/text</url>
+      	<update>true</update>
+        <url>http://wc.eatopian.com:8080/manager/text</url>
         <server>tomcat7</server>
         <path>/service</path>
         <username>script</username>

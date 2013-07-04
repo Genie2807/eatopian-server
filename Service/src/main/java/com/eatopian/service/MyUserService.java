@@ -16,7 +16,7 @@ public class MyUserService implements UserService {
 	@GET
     @Produces(MediaType.TEXT_PLAIN)
 	public String getIt() {
-		return "hello";
+		return "hellooooooooo";
 	}
 	
 	@POST
