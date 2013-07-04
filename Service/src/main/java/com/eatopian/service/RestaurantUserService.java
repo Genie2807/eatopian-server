@@ -20,12 +20,12 @@ public class RestaurantUserService implements UserService {
 	}
 	
 	@POST
-    @Consumes("application/xml")
-    @Produces(MediaType.TEXT_PLAIN)
-	public String register(User user) {
+    @Consumes(MediaType.TEXT_XML)
+    @Produces(MediaType.TEXT_XML)
+	public User register(User user) {
         
         
-		return user.getUsername() + " " + user.getPassword();
+		return user;
 	}
 	
 }

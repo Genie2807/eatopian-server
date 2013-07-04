@@ -12,6 +12,9 @@ public class User {
 	protected long id;
 	
 	@XmlElement
+	protected String token;
+	
+	@XmlElement
 	protected String username;
 
 	@XmlElement
@@ -41,4 +44,13 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
 }
