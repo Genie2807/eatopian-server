@@ -20,8 +20,8 @@ public class RestaurantUserService implements UserService {
 	}
 	
 	@POST
-    @Consumes(MediaType.TEXT_XML)
-    @Produces(MediaType.TEXT_XML)
+    @Consumes(MediaType.APPLICATION_XML)
+    @Produces(MediaType.APPLICATION_XML)
 	public User register(User user) {
         
         
