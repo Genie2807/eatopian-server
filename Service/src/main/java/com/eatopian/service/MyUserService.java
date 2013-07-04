@@ -15,14 +15,14 @@ public class MyUserService implements UserService {
 	
 	@GET
     @Produces(MediaType.TEXT_PLAIN)
-	public String getIt() {
-		return "hellooooooooo";
+	public String getUsers() {
+		return "all users";
 	}
 	
 	@POST
     @Consumes("application/xml")
     @Produces(MediaType.TEXT_PLAIN)
-	public String post(User user) {
+	public String register(User user) {
         
         
 		return user.getUsername() + " " + user.getPassword();

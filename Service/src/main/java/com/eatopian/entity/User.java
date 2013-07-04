@@ -9,12 +9,22 @@ import javax.xml.bind.annotation.XmlAccessType;
 @XmlAccessorType(XmlAccessType.FIELD)
 public class User {
 	
+	protected long id;
+	
 	@XmlElement
 	protected String username;
 
 	@XmlElement
 	protected String password;
 
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
 
 	public String getUsername() {
 		return this.username; 
