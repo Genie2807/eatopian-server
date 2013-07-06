@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 public class User {
 	
 	@XmlElement
-	protected int id;
+	protected Integer id;
 	
 	@XmlElement
 	protected String token;
@@ -22,11 +22,11 @@ public class User {
 	protected String password;
 
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
