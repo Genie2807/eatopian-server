@@ -1,4 +1,7 @@
 package com.eatopian.dao;
+import java.io.File;
+import java.io.IOException;
+import java.net.UnknownHostException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,10 +9,14 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import com.eatopian.entity.Restaurant;
 import com.eatopian.entity.User;
+import com.mongodb.DB;
+import com.mongodb.DBCursor;
+import com.mongodb.Mongo;
+import com.mongodb.MongoException;
+import com.mongodb.gridfs.GridFS;
+import com.mongodb.gridfs.GridFSDBFile;
+import com.mongodb.gridfs.GridFSInputFile;
 
 
 
@@ -130,26 +137,20 @@ public class RestaurantUserDao implements UserDao {
  
 			String newFileName = "dish1";
 			
-			
 			File imageFile = new File("src/main/resources/dish1.png");
- 
-			
-			
-			
+
 			// create image namespace
 			GridFS GFS = new GridFS(db, "image");
  
 			// get image file from local drive
 			GridFSInputFile gfsFile = GFS.createFile(imageFile);
 			
-			
-			
 			// set a new filename for identify purpose
 			gfsFile.setFilename(newFileName);
- 
+			
 			// save the image file into mongoDB
 			gfsFile.save();
- 
+			
 			// print the result
 			DBCursor cursor = GFS.getFileList();
 			while (cursor.hasNext()) {
@@ -162,9 +163,8 @@ public class RestaurantUserDao implements UserDao {
 			// save it into a new image file
 			imageForOutput.writeTo("src/main/resources/dish2.png");
  
-//			// remove the image file from mongoDB
+			// remove the image file from mongoDB
 //			GFS.remove(GFS.findOne(newFileName));
- 
 //			System.out.println("Done");
  
 		} catch (UnknownHostException e) {
