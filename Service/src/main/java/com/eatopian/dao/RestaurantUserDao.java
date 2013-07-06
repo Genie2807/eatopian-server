@@ -1,8 +1,4 @@
 package com.eatopian.dao;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.UnknownHostException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,15 +6,10 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import com.eatopian.entity.Restaurant;
 import com.eatopian.entity.User;
-import com.mongodb.DB;
-import com.mongodb.DBCollection;
-import com.mongodb.DBCursor;
-import com.mongodb.Mongo;
-import com.mongodb.MongoException;
-import com.mongodb.gridfs.GridFS;
-import com.mongodb.gridfs.GridFSDBFile;
-import com.mongodb.gridfs.GridFSInputFile;
 
 
 
@@ -29,7 +20,7 @@ public class RestaurantUserDao implements UserDao {
 	public RestaurantUserDao(){
 		
 	}
-	
+
 	public boolean login(User user) {
 		String checkSql = "SELECT * FROM Restaurant WHERE username = ? and password = ?";
 		Connection conn = null;
@@ -99,12 +90,8 @@ public class RestaurantUserDao implements UserDao {
 			
 		return true;
 	}
-
 	
-/*
- *  mysql login and register test
- */	
- 
+	
 //	public static void main( String[] args )
 //    {
 //    	ApplicationContext context = 
@@ -189,7 +176,6 @@ public class RestaurantUserDao implements UserDao {
 		}
  
 	}
-	
 	
 	
 	public void setDataSource(DataSource dataSource) {
