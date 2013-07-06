@@ -59,8 +59,7 @@ public class RestaurantUserDao implements UserDao {
 				conn.close();
 				} catch (SQLException e) {}
 			}
-		}
-			
+		}	
 		return true;
 	}
 	
