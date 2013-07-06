@@ -9,6 +9,7 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import com.eatopian.entity.Restaurant;
 import com.eatopian.entity.User;
 import com.mongodb.DB;
 import com.mongodb.DBCursor;
@@ -20,7 +21,7 @@ import com.mongodb.gridfs.GridFSInputFile;
 
 
 
-public class RestaurantUserDao implements UserDao {
+public class RestaurantUserDao implements UserDao, RestaurantDao {
 	
 	private DataSource dataSource;
 
@@ -181,5 +182,11 @@ public class RestaurantUserDao implements UserDao {
 	
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
+	}
+
+	@Override
+	public void saveImage(Restaurant restaurant, byte[] bytes) {
+		
+		
 	}
 }
