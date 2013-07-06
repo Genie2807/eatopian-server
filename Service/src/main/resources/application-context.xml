@@ -7,14 +7,6 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
  	
- 	<mongo:mongo host="g.sj.gs" port="27017" />
-	<mongo:db-factory dbname="GFS" />
- 
-	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
-		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
-	</bean>
- 	
- 	
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
@@ -22,8 +14,5 @@
 		<property name="username" value="root" />
 		<property name="password" value="farseer" />
 	</bean>
-
-
-
 
 </beans>

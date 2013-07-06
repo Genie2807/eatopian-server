@@ -21,16 +21,14 @@ import com.mongodb.gridfs.GridFSDBFile;
 import com.mongodb.gridfs.GridFSInputFile;
 
 
+
 public class RestaurantUserDao implements UserDao {
 	
 	private DataSource dataSource;
-	
-	
-	
+
 	public RestaurantUserDao(){
 		
 	}
-	
 	
 	public boolean login(User user) {
 		String checkSql = "SELECT * FROM Restaurant WHERE username = ? and password = ?";
@@ -59,7 +57,8 @@ public class RestaurantUserDao implements UserDao {
 				conn.close();
 				} catch (SQLException e) {}
 			}
-		}	
+		}
+			
 		return true;
 	}
 	
@@ -134,57 +133,62 @@ public class RestaurantUserDao implements UserDao {
  * GFS test	
  */
 	
-//	public static void main(String[] args) {
-//		 
-//		try {
-// 
-//			Mongo mongo = new Mongo("g.sj.gs");
-//			DB db = mongo.getDB("GFS");
-////			DBCollection collection = db.getCollection("images");
-// 
-//			String newFileName = "dish1";
-//			
-//			
-//			File imageFile = new File("src/main/resources/dish1.png");
-// 
-//			// create image namespace
-//			GridFS GFS = new GridFS(db, "image");
-// 
-//			// get image file from local drive
-//			GridFSInputFile gfsFile = GFS.createFile(imageFile);
-// 
-//			// set a new filename for identify purpose
-//			gfsFile.setFilename(newFileName);
-// 
-//			// save the image file into mongoDB
-//			gfsFile.save();
-// 
-//			// print the result
-//			DBCursor cursor = GFS.getFileList();
-//			while (cursor.hasNext()) {
-//				System.out.println(cursor.next());
-//			}
-// 
-//			// get image file by it's filename
-//			GridFSDBFile imageForOutput = GFS.findOne(newFileName);
-// 
-//			// save it into a new image file
-//			imageForOutput.writeTo("src/main/resources/dish2.png");
-// 
-////			// remove the image file from mongoDB
-////			GFS.remove(GFS.findOne(newFileName));
-// 
-////			System.out.println("Done");
-// 
-//		} catch (UnknownHostException e) {
-//			e.printStackTrace();
-//		} catch (MongoException e) {
-//			e.printStackTrace();
-//		} catch (IOException e) {
-//			e.printStackTrace();
-//		}
-// 
-//	}
+	public static void main(String[] args) {
+		 
+		try {
+ 
+			Mongo mongo = new Mongo("g.sj.gs");
+			DB db = mongo.getDB("GFS");
+//			DBCollection collection = db.getCollection("images");
+ 
+			String newFileName = "dish1";
+			
+			
+			File imageFile = new File("src/main/resources/dish1.png");
+ 
+			
+			
+			
+			// create image namespace
+			GridFS GFS = new GridFS(db, "image");
+ 
+			// get image file from local drive
+			GridFSInputFile gfsFile = GFS.createFile(imageFile);
+			
+			
+			
+			// set a new filename for identify purpose
+			gfsFile.setFilename(newFileName);
+ 
+			// save the image file into mongoDB
+			gfsFile.save();
+ 
+			// print the result
+			DBCursor cursor = GFS.getFileList();
+			while (cursor.hasNext()) {
+				System.out.println(cursor.next());
+			}
+ 
+			// get image file by it's filename
+			GridFSDBFile imageForOutput = GFS.findOne(newFileName);
+ 
+			// save it into a new image file
+			imageForOutput.writeTo("src/main/resources/dish2.png");
+ 
+//			// remove the image file from mongoDB
+//			GFS.remove(GFS.findOne(newFileName));
+ 
+//			System.out.println("Done");
+ 
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		} catch (MongoException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+ 
+	}
 	
 	
 	
