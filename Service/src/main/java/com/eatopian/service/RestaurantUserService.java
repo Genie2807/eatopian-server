@@ -1,28 +1,24 @@
 package com.eatopian.service;
 
-
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.core.MediaType;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.eatopian.entity.User;
 
-@Path("users")
+@Controller
+@RequestMapping("/users")
 public class RestaurantUserService implements UserService {
 	
-	@GET
-    @Produces(MediaType.TEXT_PLAIN)
+	@RequestMapping(method=RequestMethod.GET)
 	public String getUsers() {
 		return "all users";
 	}
 	
-	@POST
-    @Consumes(MediaType.APPLICATION_XML)
-    @Produces(MediaType.APPLICATION_XML)
-	public User register(User user) {
+	@RequestMapping(method=RequestMethod.POST, headers = "Content-Type=application/xml")
+	public @ResponseBody User register(@RequestBody User user) {
         
         
 		return user;
