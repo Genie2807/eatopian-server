@@ -56,7 +56,7 @@ public class RestaurantUserDao implements UserDao {
 				} catch (SQLException e) {}
 			}
 		}
-			
+		
 		return true;
 	}
 	
@@ -131,6 +131,7 @@ public class RestaurantUserDao implements UserDao {
 		 
 		try {
  
+			@SuppressWarnings("deprecation")
 			Mongo mongo = new Mongo("g.sj.gs");
 			DB db = mongo.getDB("GFS");
 //			DBCollection collection = db.getCollection("images");
