@@ -28,7 +28,7 @@ public class RestaurantUserDao implements UserDao {
 			ps.setString(2, user.getPassword());
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()){
-				user.setId((long)rs.getLong("id"));
+				user.setId(rs.getLong("id"));
 			}else{
 				rs.close();
 				ps.close();
