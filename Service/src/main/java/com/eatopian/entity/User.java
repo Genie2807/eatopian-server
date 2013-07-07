@@ -10,48 +10,26 @@ import javax.xml.bind.annotation.XmlAccessType;
 public class User {
 	
 	@XmlElement
-	protected Integer id;
+	protected Account account;
 	
 	@XmlElement
-	protected String token;
+	protected String name;
 	
-	@XmlElement
-	protected String username;
-
-	@XmlElement
-	protected String password;
-
-
-	public Integer getId() {
-		return id;
+	public Account getAccount() {
+		return account;
 	}
 
-	public void setId(Integer id) {
-		this.id = id;
+	public void setAccount(Account account) {
+		this.account = account;
 	}
 
-	public String getUsername() {
-		return this.username; 
+	public String getName() {
+		return name;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
-
-	public String getPassword() {
-		return this.password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
-	public String getToken() {
-		return token;
-	}
-
-	public void setToken(String token) {
-		this.token = token;
-	}
-
+	
 }
