@@ -10,11 +10,25 @@ import javax.xml.bind.annotation.XmlAccessType;
 public class User {
 	
 	@XmlElement
+	protected Integer id;
+	
+	@XmlElement
+	protected String token;
+	
+	@XmlElement
 	protected String username;
 
 	@XmlElement
 	protected String password;
 
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 
 	public String getUsername() {
 		return this.username; 
@@ -31,4 +45,13 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+
 }
