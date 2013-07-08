@@ -6,6 +6,8 @@ import com.eatopian.entity.User;
 
 public interface UserService {
 	
-    public String getUsers();
+    
+    public User login(User user);
     public User register(User user);
+    
 }

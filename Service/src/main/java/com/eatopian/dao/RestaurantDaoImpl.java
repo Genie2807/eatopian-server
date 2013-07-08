@@ -21,11 +21,11 @@ import com.mongodb.gridfs.GridFSInputFile;
 
 
 
-public class RestaurantUserDao implements UserDao, RestaurantDao {
+public class RestaurantDaoImpl implements RestaurantDao {
 	
 	private DataSource dataSource;
 
-	public RestaurantUserDao(){
+	public RestaurantDaoImpl(){
 		
 	}
 
