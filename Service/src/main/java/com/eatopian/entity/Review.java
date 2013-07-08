@@ -1,26 +1,26 @@
 package com.eatopian.entity;
 
 //import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.List;
 import java.util.Date;
 
 public class Review {
 
-	private User author;
-	private ArrayList<Dish> dishTag;
+	private Account author;
+	private List<Dish> dishTag;
 	private String review;
 	private Date datetime;
 	
-	public User getAuthor() {
+	public Account getAuthor() {
 		return author;
 	}
-	public void setAuthor(User author) {
+	public void setAuthor(Account author) {
 		this.author = author;
 	}
-	public ArrayList<Dish> getDishTag() {
+	public List<Dish> getDishTag() {
 		return dishTag;
 	}
-	public void setDishTag(ArrayList<Dish> dishTag) {
+	public void setDishTag(List<Dish> dishTag) {
 		this.dishTag = dishTag;
 	}
 	public String getReview() {
@@ -37,5 +37,5 @@ public class Review {
 	}
 	
 //	SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh-mm-ss");
-//    System.out.print(dateFormat.format(date));	
+//    System.out.print(dateFormat.format(date));
 }

@@ -1,10 +1,10 @@
 package com.eatopian.entity;
-import java.util.ArrayList;
+import java.util.List;
 
 public class Entree {
 	
 	private String entreeName;
-	private ArrayList<Dish> dishes;
+	private List<Dish> dishes;
 	private String entreeDescription;
 	
 	public String getEntreeName() {
@@ -13,10 +13,10 @@ public class Entree {
 	public void setEntreeName(String entreeName) {
 		this.entreeName = entreeName;
 	}
-	public ArrayList<Dish> getDishes() {
+	public List<Dish> getDishes() {
 		return dishes;
 	}
-	public void setDishes(ArrayList<Dish> dishes) {
+	public void setDishes(List<Dish> dishes) {
 		this.dishes = dishes;
 	}
 	public String getEntreeDescription() {

@@ -4,15 +4,15 @@ import java.util.Date;
 
 public class DishImage {
 	
-	private User author;
+	private Account author;
 	private Date uploadDateTime;
 	private String filename;
 	private byte[] sourceData;
 	
-	public User getAuthor() {
+	public Account getAuthor() {
 		return author;
 	}
-	public void setAuthor(User author) {
+	public void setAuthor(Account author) {
 		this.author = author;
 	}
 	public Date getUploadDateTime() {

@@ -1,17 +1,25 @@
 package com.eatopian.entity;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class Restaurant extends User {
-		
+public class Restaurant{
+	
+	protected String name;
 	protected Address address;
 	protected String phoneNumber;
 	protected int consumptionLevel;
 	protected String style;
 	
 	protected Menu menu;
-	protected ArrayList<Review> review;
+	protected List<Review> review;
 	
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
 	public Address getAddress() {
 		return address;
 	}
@@ -42,10 +50,10 @@ public class Restaurant extends User {
 	public void setMenu(Menu menu) {
 		this.menu = menu;
 	}
-	public ArrayList<Review> getReview() {
+	public List<Review> getReview() {
 		return review;
 	}
-	public void setReview(ArrayList<Review> review) {
+	public void setReview(List<Review> review) {
 		this.review = review;
 	}
 			

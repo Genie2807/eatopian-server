@@ -1,6 +1,6 @@
 package com.eatopian.entity;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Dish {
 	
@@ -9,10 +9,8 @@ public class Dish {
 	private String description;
 	private DishImage mainPage;
 	
-	private ArrayList<DishImage> gallery;
-	private ArrayList<Review> reviews;
-	
-	
+	private List<DishImage> gallery;
+	private List<Review> reviews;
 	
 	
 	public String getDishName() {
@@ -39,16 +37,16 @@ public class Dish {
 	public void setMainPage(DishImage mainPage) {
 		this.mainPage = mainPage;
 	}
-	public ArrayList<DishImage> getGallery() {
+	public List<DishImage> getGallery() {
 		return gallery;
 	}
-	public void setGallery(ArrayList<DishImage> gallery) {
+	public void setGallery(List<DishImage> gallery) {
 		this.gallery = gallery;
 	}
-	public ArrayList<Review> getReviews() {
+	public List<Review> getReviews() {
 		return reviews;
 	}
-	public void setReviews(ArrayList<Review> reviews) {
+	public void setReviews(List<Review> reviews) {
 		this.reviews = reviews;
 	}
 	

@@ -1,16 +1,16 @@
 package com.eatopian.entity;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Menu {
 	
-	private ArrayList<Entree> entrees;
+	private List<Entree> entrees;
 
-	public ArrayList<Entree> getMenu() {
+	public List<Entree> getMenu() {
 		return entrees;
 	}
 	
-	public void setMenu(ArrayList<Entree> entrees) {
+	public void setMenu(List<Entree> entrees) {
 		this.entrees = entrees;
 	}
 	
