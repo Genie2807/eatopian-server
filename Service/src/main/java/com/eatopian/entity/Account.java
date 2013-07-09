@@ -1,5 +1,6 @@
 package com.eatopian.entity;
 
+<<<<<<< HEAD:Service/src/main/java/com/eatopian/entity/Account.java
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -7,20 +8,21 @@ import javax.xml.bind.annotation.XmlAccessType;
 
 @XmlRootElement(name="account") 
 @XmlAccessorType(XmlAccessType.FIELD)
+=======
+>>>>>>> GBranch:Service/src/main/java/com/eatopian/entity/Account.java
 public class Account {
 	
-	@XmlElement
 	protected Integer id;
 	
-	@XmlElement
-	protected String token;
+	protected String obfuscation;
 	
-	@XmlElement
+	protected Token token;
+	
 	protected String username;
 
-	@XmlElement
 	protected String password;
-
+	
+	protected String type;
 
 	public Integer getId() {
 		return id;
@@ -30,8 +32,24 @@ public class Account {
 		this.id = id;
 	}
 
+	public String getObfuscation() {
+		return obfuscation;
+	}
+
+	public void setObfuscation(String obfuscation) {
+		this.obfuscation = obfuscation;
+	}
+
+	public Token getToken() {
+		return token;
+	}
+
+	public void setToken(Token token) {
+		this.token = token;
+	}
+
 	public String getUsername() {
-		return this.username; 
+		return username;
 	}
 
 	public void setUsername(String username) {
@@ -39,19 +57,20 @@ public class Account {
 	}
 
 	public String getPassword() {
-		return this.password;
+		return password;
 	}
 
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
 	
-	public String getToken() {
-		return token;
-	}
-
-	public void setToken(String token) {
-		this.token = token;
-	}
-
+	
 }
