@@ -1,15 +1,5 @@
 package com.eatopian.entity;
 
-<<<<<<< HEAD:Service/src/main/java/com/eatopian/entity/Account.java
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlAccessType;
-
-@XmlRootElement(name="account") 
-@XmlAccessorType(XmlAccessType.FIELD)
-=======
->>>>>>> GBranch:Service/src/main/java/com/eatopian/entity/Account.java
 public class Account {
 	
 	protected Integer id;

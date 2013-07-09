@@ -1,9 +1,5 @@
 package com.eatopian.entity;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-public class Restaurant extends Account {
-=======
 import java.util.List;
 
 public class Restaurant{
@@ -19,10 +15,6 @@ public class Restaurant{
 	protected Menu menu;
 	protected List<Review> review;
 	
->>>>>>> GBranch
-=======
-public class Restaurant {
->>>>>>> 15c755d73f4e4e6d490baebcb7223a3249072f92
 	
 	public String getName() {
 		return name;
