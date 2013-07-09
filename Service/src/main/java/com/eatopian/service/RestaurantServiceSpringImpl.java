@@ -16,16 +16,6 @@ import com.eatopian.entity.Restaurant;
 @RequestMapping("/restaurants")
 public class RestaurantServiceSpringImpl implements RestaurantService {
 	
-	@RequestMapping(value="/upload", method=RequestMethod.POST)
-	public void uploadImage(@RequestParam(value="image", required=false) MultipartFile image) {
-        
-//		try {
-//			this.restaurantDao.saveImage(new Restaurant(), image.getBytes());
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-    }
 	
 	@RequestMapping(method=RequestMethod.POST)
 	public void createRestaurant(Restaurant restaurant) {

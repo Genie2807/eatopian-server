@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 import javax.sql.DataSource;
 
@@ -28,18 +29,6 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	public RestaurantDaoImpl(){
 		
 	}
-
-	public boolean login(Account account) {
-		
-		
-		return true;
-	}
-	
-	public boolean register(Account account) {
-		
-			
-		return true;
-	}
 	
 	
 	public void createRestaurant(Restaurant restaurant, String token) {
@@ -48,7 +37,7 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	}
 	
 	@Override
-	public Restaurant getRestaurant(String token) {
+	public Restaurant getRestaurant(String restaurantId, String token) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -58,7 +47,7 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	}
 
 	@Override
-	public void saveImage(String restaurantId, byte[] bytes, String token) {
+	public void addImage(String restaurantId, byte[] bytes, String token) {
 		try {
 
 			@SuppressWarnings("deprecation")
@@ -107,6 +96,13 @@ public class RestaurantDaoImpl implements RestaurantDao {
 //			e.printStackTrace();
 //		}
 		
+	}
+
+
+	@Override
+	public List<Restaurant> getRestaurants(String token) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 
