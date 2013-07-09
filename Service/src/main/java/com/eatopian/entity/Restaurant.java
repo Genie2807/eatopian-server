@@ -9,6 +9,8 @@ public class Restaurant{
 	protected String phoneNumber;
 	protected int consumptionLevel;
 	protected String style;
+	protected String status;
+	
 	
 	protected Menu menu;
 	protected List<Review> review;
