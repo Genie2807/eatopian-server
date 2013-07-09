@@ -6,6 +6,9 @@ import com.eatopian.entity.Restaurant;
 
 public interface RestaurantDao {
 
+	/**
+	 * Create a restaurant and associate it with the token
+	 */
 	public void createRestaurant(Restaurant restaurant, String token);
 	
 	/**
@@ -13,6 +16,9 @@ public interface RestaurantDao {
 	 */
 	public List<Restaurant> getRestaurants(String token);
 	
+	/**
+	 * Get the restaurant with restaurantId
+	 */
 	public Restaurant getRestaurant(String restaurantId, String token);
 	
 	/**
