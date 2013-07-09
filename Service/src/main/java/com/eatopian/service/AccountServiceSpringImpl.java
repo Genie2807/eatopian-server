@@ -8,27 +8,27 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.eatopian.dao.UserDao;
-import com.eatopian.entity.User;
+import com.eatopian.dao.AccountDao;
+import com.eatopian.entity.Account;
 
 @Controller
-@RequestMapping("/users")
-public class UserServiceSpringImpl implements UserService {
+@RequestMapping("/accounts")
+public class AccountServiceSpringImpl implements AccountService {
 	
 	
-	private UserDao userDao;
+	private AccountDao userDao;
 	
 	@RequestMapping(method=RequestMethod.POST, headers = "Content-Type=application/xml")
-	public @ResponseBody User register(@RequestBody User user) {
+	public @ResponseBody Account register(@RequestBody Account account) {
         
 		//userDao.register(user);
 		
-		return user;
+		return account;
 	}
 	
 
 	@RequestMapping(value="login", method=RequestMethod.POST)
-	public User login(@RequestBody User user) {
+	public Account login(@RequestBody Account account) {
 
 		//userDao.login(user);
 		
@@ -37,7 +37,7 @@ public class UserServiceSpringImpl implements UserService {
 
 
 
-	public void setUserDao(UserDao userDao) {
+	public void setUserDao(AccountDao userDao) {
 		this.userDao = userDao;
 	}
 	

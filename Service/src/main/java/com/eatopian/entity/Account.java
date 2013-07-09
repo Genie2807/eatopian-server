@@ -5,9 +5,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAccessType;
 
-@XmlRootElement(name="user") 
+@XmlRootElement(name="account") 
 @XmlAccessorType(XmlAccessType.FIELD)
-public class User {
+public class Account {
 	
 	@XmlElement
 	protected Integer id;

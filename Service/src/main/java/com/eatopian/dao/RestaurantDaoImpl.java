@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import javax.sql.DataSource;
 
 import com.eatopian.entity.Restaurant;
-import com.eatopian.entity.User;
+import com.eatopian.entity.Account;
 import com.mongodb.DB;
 import com.mongodb.DBCursor;
 import com.mongodb.Mongo;
@@ -29,7 +29,7 @@ public class RestaurantDaoImpl implements RestaurantDao {
 		
 	}
 
-	public boolean login(User user) {
+	public boolean login(Account user) {
 		String checkSql = "SELECT * FROM Restaurant WHERE username = ? and password = ?";
 		Connection conn = null;
 		 
@@ -61,7 +61,7 @@ public class RestaurantDaoImpl implements RestaurantDao {
 		return true;
 	}
 	
-	public boolean register(User user) {
+	public boolean register(Account user) {
 		String checkSql = "SELECT * FROM Restaurant WHERE username = ?";
 		
 		String insertSql = "INSERT INTO Restaurant " +
