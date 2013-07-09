@@ -4,20 +4,20 @@ import java.util.List;
 
 public class Dish {
 	
-	private String dishName;
+	private String name;
 	private double price;
 	private String description;
-	private DishImage mainPage;
+	private DishImage mainPageImage;
 	
 	private List<DishImage> gallery;
 	private List<Review> reviews;
 	
 	
-	public String getDishName() {
-		return dishName;
+	public String getName() {
+		return name;
 	}
-	public void setDishName(String dishName) {
-		this.dishName = dishName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public double getPrice() {
 		return price;
@@ -31,11 +31,11 @@ public class Dish {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public DishImage getMainPage() {
-		return mainPage;
+	public DishImage getMainPageImage() {
+		return mainPageImage;
 	}
-	public void setMainPage(DishImage mainPage) {
-		this.mainPage = mainPage;
+	public void setMainPageImage(DishImage mainPageImage) {
+		this.mainPageImage = mainPageImage;
 	}
 	public List<DishImage> getGallery() {
 		return gallery;
@@ -49,6 +49,8 @@ public class Dish {
 	public void setReviews(List<Review> reviews) {
 		this.reviews = reviews;
 	}
+
+
 	
 	
 	
