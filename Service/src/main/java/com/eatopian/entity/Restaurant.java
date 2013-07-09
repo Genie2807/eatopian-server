@@ -1,5 +1,5 @@
 package com.eatopian.entity;
 
-public class Restaurant extends Account {
+public class Restaurant {
 	
 }

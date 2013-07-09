@@ -36,7 +36,7 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	}
 	
 	@Override
-	public Restaurant getRestaurant(String token) {
+	public Restaurant getRestaurant(String restaurantId, String token) {
 		// TODO Auto-generated method stub
 		return null;
 	}
@@ -95,6 +95,13 @@ public class RestaurantDaoImpl implements RestaurantDao {
 //			e.printStackTrace();
 //		}
 		
+	}
+
+
+	@Override
+	public Restaurant getRestaurants(String token) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

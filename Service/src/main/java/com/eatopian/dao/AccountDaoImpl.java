@@ -16,10 +16,6 @@ public class AccountDaoImpl implements AccountDao {
 		return false;
 	}
 
-	@Override
-	public boolean isLoggedIn(Account account) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 
 }
