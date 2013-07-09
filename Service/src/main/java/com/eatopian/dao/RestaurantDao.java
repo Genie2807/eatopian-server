@@ -8,6 +8,6 @@ public interface RestaurantDao {
 	
 	public Restaurant getRestaurant(String token);
 	
-	public void saveImage(String restaurantId, byte[] bytes, String token);
+	public void addImage(String restaurantId, byte[] bytes, String token);
 	
 }

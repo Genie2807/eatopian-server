@@ -46,7 +46,7 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	}
 
 	@Override
-	public void saveImage(String restaurantId, byte[] bytes, String token) {
+	public void addImage(String restaurantId, byte[] bytes, String token) {
 		try {
 
 			@SuppressWarnings("deprecation")
