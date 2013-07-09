@@ -28,18 +28,6 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	public RestaurantDaoImpl(){
 		
 	}
-
-	public boolean login(Account account) {
-		
-		
-		return true;
-	}
-	
-	public boolean register(Account account) {
-		
-			
-		return true;
-	}
 	
 	
 	public void createRestaurant(Restaurant restaurant, String token) {

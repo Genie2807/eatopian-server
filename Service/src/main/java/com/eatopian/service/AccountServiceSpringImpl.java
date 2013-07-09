@@ -11,17 +11,18 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.eatopian.dao.AccountDao;
 import com.eatopian.entity.Account;
 
+
 @Controller
 @RequestMapping("/accounts")
 public class AccountServiceSpringImpl implements AccountService {
 	
 	
-	private AccountDao userDao;
+	private AccountDao accountDao;
 	
-	@RequestMapping(method=RequestMethod.POST, headers = "Content-Type=application/xml")
+	@RequestMapping(value="register", method=RequestMethod.POST, produces={"application/xml"})
 	public @ResponseBody Account register(@RequestBody Account account) {
         
-		//userDao.register(user);
+		//accountDao.register(user);
 		
 		return account;
 	}
@@ -30,15 +31,15 @@ public class AccountServiceSpringImpl implements AccountService {
 	@RequestMapping(value="login", method=RequestMethod.POST)
 	public Account login(@RequestBody Account account) {
 
-		//userDao.login(user);
+		//accountDao.login(user);
 		
 		return null;
 	}
 
 
 
-	public void setUserDao(AccountDao userDao) {
-		this.userDao = userDao;
+	public void setUserDao(AccountDao accountDao) {
+		this.accountDao = accountDao;
 	}
 	
 }
