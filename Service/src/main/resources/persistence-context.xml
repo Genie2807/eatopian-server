@@ -1,18 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
-	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-	
-	<bean id="restaurantDao" class="com.eatopian.dao.RestaurantUserDao">
-		<property name="dataSource" ref="dataSource" />
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	xsi:schemaLocation="http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context-3.0.xsd
+          http://www.springframework.org/schema/data/mongo
+          http://www.springframework.org/schema/data/mongo/spring-mongo-1.0.xsd
+          http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<context:property-placeholder
+		location="classpath*:META-INF/mongodb/mongodb.properties" />
+
+
+	<mongo:mongo host="g.sj.gs" port="27017">
+		<mongo:options connections-per-host="8"
+			threads-allowed-to-block-for-connection-multiplier="4"
+			connect-timeout="1000" max-wait-time="1500" auto-connect-retry="true"
+			socket-keep-alive="true" socket-timeout="1500" slave-ok="true"
+			write-number="1" write-timeout="0" write-fsync="true" />
+	</mongo:mongo>
+
+	<mongo:db-factory dbname="GFS" mongo-ref="mongo" />
+
+	<mongo:mapping-converter />
+	<bean id="MongoConverter" class="com.eatopian.dao.MongoConverter">
+		<property name="mongoConverter" ref="mappingConverter" />
 	</bean>
- 	
-	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://g.sj.gs:3306/test" />
-		<property name="username" value="root" />
-		<property name="password" value="farseer" />
+
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+		<constructor-arg name="mongoConverter" ref="MongoConverter" />
 	</bean>
+
+	<mongo:mapping-converter base-package="com.eatopian.entity" />
+	<mongo:repositories base-package="com.eatopian.persist.mongodb" />
+
 
 </beans>

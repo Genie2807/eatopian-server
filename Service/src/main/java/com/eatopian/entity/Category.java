@@ -1,7 +1,7 @@
 package com.eatopian.entity;
 import java.util.List;
 
-public class Entree {
+public class Category {
 	
 	private String entreeName;
 	private List<Dish> dishes;

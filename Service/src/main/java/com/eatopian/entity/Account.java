@@ -1,10 +1,11 @@
 package com.eatopian.entity;
 
-public class Account {
+
+
+
+public class Account{
 	
 	protected Integer id;
-	
-	protected String obfuscation;
 	
 	protected Token token;
 	
@@ -13,21 +14,14 @@ public class Account {
 	protected String password;
 	
 	protected String type;
-
+	
+	
 	public Integer getId() {
 		return id;
 	}
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public String getObfuscation() {
-		return obfuscation;
-	}
-
-	public void setObfuscation(String obfuscation) {
-		this.obfuscation = obfuscation;
 	}
 
 	public Token getToken() {
@@ -61,6 +55,8 @@ public class Account {
 	public void setType(String type) {
 		this.type = type;
 	}
+
+	
 	
 	
 }

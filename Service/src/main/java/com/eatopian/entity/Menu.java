@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Menu {
 	
-	private List<Entree> entrees;
+	private List<Category> entrees;
 
-	public List<Entree> getMenu() {
+	public List<Category> getMenu() {
 		return entrees;
 	}
 	
-	public void setMenu(List<Entree> entrees) {
+	public void setMenu(List<Category> entrees) {
 		this.entrees = entrees;
 	}
 	

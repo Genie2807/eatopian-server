@@ -7,7 +7,7 @@ public class Dish {
 	private String dishName;
 	private double price;
 	private String description;
-	private DishImage mainPage;
+	private DishImage mainPageImage;
 	
 	private List<DishImage> gallery;
 	private List<Review> reviews;
@@ -31,11 +31,11 @@ public class Dish {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public DishImage getMainPage() {
-		return mainPage;
+	public DishImage getMainPageImage() {
+		return mainPageImage;
 	}
-	public void setMainPage(DishImage mainPage) {
-		this.mainPage = mainPage;
+	public void setMainPageImage(DishImage mainPageImage) {
+		this.mainPageImage = mainPageImage;
 	}
 	public List<DishImage> getGallery() {
 		return gallery;
@@ -49,7 +49,6 @@ public class Dish {
 	public void setReviews(List<Review> reviews) {
 		this.reviews = reviews;
 	}
-	
-	
+		
 	
 }
