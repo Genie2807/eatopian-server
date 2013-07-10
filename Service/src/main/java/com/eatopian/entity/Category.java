@@ -3,26 +3,28 @@ import java.util.List;
 
 public class Category {
 	
-	private String entreeName;
+	private String name;
 	private List<Dish> dishes;
-	private String entreeDescription;
+	private String description;
 	
-	public String getEntreeName() {
-		return entreeName;
-	}
-	public void setEntreeName(String entreeName) {
-		this.entreeName = entreeName;
-	}
+	
+	
 	public List<Dish> getDishes() {
 		return dishes;
 	}
 	public void setDishes(List<Dish> dishes) {
 		this.dishes = dishes;
 	}
-	public String getEntreeDescription() {
-		return entreeDescription;
+	public String getName() {
+		return name;
 	}
-	public void setEntreeDescription(String entreeDescription) {
-		this.entreeDescription = entreeDescription;
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}	
 }
