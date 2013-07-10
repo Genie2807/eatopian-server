@@ -3,11 +3,11 @@ import java.util.List;
 
 public class Category {
 	
+
 	private String name;
 	private List<Dish> dishes;
 	private String description;
-	
-	
+		
 	
 	public List<Dish> getDishes() {
 		return dishes;
@@ -27,4 +27,5 @@ public class Category {
 	public void setDescription(String description) {
 		this.description = description;
 	}	
+
 }
