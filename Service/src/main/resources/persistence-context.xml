@@ -31,9 +31,6 @@
 		<constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
 		<constructor-arg name="mongoConverter" ref="MongoConverter" />
 	</bean>
-
-	<mongo:mapping-converter base-package="com.eatopian.entity" />
+	
 	<mongo:repositories base-package="com.eatopian.persist.mongodb" />
-
-
 </beans>

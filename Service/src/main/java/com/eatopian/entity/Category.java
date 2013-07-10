@@ -3,15 +3,15 @@ import java.util.List;
 
 public class Category {
 	
-	private String entreeName;
+	private String categoryName;
 	private List<Dish> dishes;
-	private String entreeDescription;
+	private String categoryDescription;
 	
-	public String getEntreeName() {
-		return entreeName;
+	public String getCategoryName() {
+		return categoryName;
 	}
-	public void setEntreeName(String entreeName) {
-		this.entreeName = entreeName;
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
 	public List<Dish> getDishes() {
 		return dishes;
@@ -19,10 +19,11 @@ public class Category {
 	public void setDishes(List<Dish> dishes) {
 		this.dishes = dishes;
 	}
-	public String getEntreeDescription() {
-		return entreeDescription;
+	public String getCategoryDescription() {
+		return categoryDescription;
 	}
-	public void setEntreeDescription(String entreeDescription) {
-		this.entreeDescription = entreeDescription;
-	}	
+	public void setCategoryDescription(String categoryDescription) {
+		this.categoryDescription = categoryDescription;
+	}
+
 }
