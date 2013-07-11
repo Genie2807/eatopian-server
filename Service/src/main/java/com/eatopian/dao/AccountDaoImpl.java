@@ -10,12 +10,12 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import com.eatopian.entity.Account;
 import com.eatopian.entity.Token;
 
-@Component
+@Repository
 public class AccountDaoImpl implements AccountDao {
 
 	private ApplicationContext ctx;

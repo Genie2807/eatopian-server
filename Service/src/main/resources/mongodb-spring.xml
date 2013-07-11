@@ -11,6 +11,8 @@
 	<context:property-placeholder
 		location="classpath*:META-INF/mongodb/mongodb.properties" />
 
+	<context:component-scan base-package="com.eatopian.dao" />
+
 	<!-- Mongodb -->
 	<mongo:mongo host="g.sj.gs" port="27017">
 		<mongo:options connections-per-host="8"
