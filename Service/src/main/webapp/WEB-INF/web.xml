@@ -38,7 +38,7 @@
             
             
             classpath:mongodb-spring.xml
-            
+            classpath:spring-security.xml
         </param-value>
     </context-param>
 </web-app>
