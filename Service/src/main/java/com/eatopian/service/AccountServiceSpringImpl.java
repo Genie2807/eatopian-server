@@ -1,6 +1,7 @@
 package com.eatopian.service;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import com.eatopian.entity.Account;
 @RequestMapping("/accounts")
 public class AccountServiceSpringImpl implements AccountService {
 	
-	
+	@Autowired
 	private AccountDao accountDao;
 	
 	@RequestMapping(value="register", method=RequestMethod.POST, produces={"application/xml"})

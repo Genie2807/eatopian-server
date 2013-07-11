@@ -4,19 +4,23 @@ import java.math.BigInteger;
 import java.security.SecureRandom;
 
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.stereotype.Component;
 
 import com.eatopian.entity.Account;
 import com.eatopian.entity.Token;
 
+@Component
 public class AccountDaoImpl implements AccountDao {
 
 	private ApplicationContext ctx;
 
+	@Autowired
 	private MongoOperations mongoOperation;
 
 	private SecureRandom random;

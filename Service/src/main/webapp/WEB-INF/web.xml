@@ -37,7 +37,7 @@
         <param-value>
             
             
-            classpath:persistence-context.xml
+            classpath:mongodb-spring.xml
             
         </param-value>
     </context-param>
