@@ -5,7 +5,12 @@ import java.util.Date;
 public class Token {
 	
 	private String token;
-	private Date lastModified;
+	private Date createDate;
+	
+	public Token(String token){
+		this.token = token;
+		this.createDate = new Date();
+	}
 	
 	public String getToken() {
 		return token;
@@ -13,10 +18,11 @@ public class Token {
 	public void setToken(String token) {
 		this.token = token;
 	}
-	public Date getLastModified() {
-		return lastModified;
+	public Date getCreateDate() {
+		return createDate;
 	}
-	public void setLastModified(Date lastModified) {
-		this.lastModified = lastModified;
-	}	
+	public void setCreateDate(Date createDate) {
+		this.createDate = createDate;
+	}
+	
 }

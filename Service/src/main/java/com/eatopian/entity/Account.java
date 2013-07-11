@@ -1,14 +1,20 @@
 package com.eatopian.entity;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 
-
+@Document(collection = "Account")
 public class Account{
 	
-	protected Integer id;
+	@Id
+	@Indexed
+	protected String id;
 	
 	protected Token token;
 	
+	@Indexed
 	protected String username;
 
 	protected String password;
@@ -16,11 +22,17 @@ public class Account{
 	protected String type;
 	
 	
-	public Integer getId() {
+	public Account(String username, String password, String type){
+		this.username = username;
+		this.password = password;
+		this.type = type;
+	}
+	
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -56,7 +68,5 @@ public class Account{
 		this.type = type;
 	}
 
-	
-	
-	
+
 }

@@ -1,8 +1,12 @@
 package com.eatopian.dao;
-
 import java.net.UnknownHostException;
 import java.util.List;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.data.mongodb.core.MongoOperations;
 
+import com.eatopian.entity.Address;
 import com.eatopian.entity.Restaurant;
 import com.eatopian.entity.Token;
 import com.mongodb.DB;
@@ -15,14 +19,20 @@ import com.mongodb.gridfs.GridFSInputFile;
 
 public class RestaurantDaoImpl implements RestaurantDao {
 	
+	private ApplicationContext ctx;
 
+	private MongoOperations mongoOperation;
+	
 	public RestaurantDaoImpl(){
-		
+		this.ctx = new GenericXmlApplicationContext("mongodb-spring.xml");
+		this.mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
 	}
 	
 	
 	public void createRestaurant(Restaurant restaurant, Token token) {
 		// TODO Auto-generated method stub
+		
+		this.mongoOperation.save(restaurant);
 		
 	}
 	
@@ -36,8 +46,7 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	@Override
 	public void addImage(String restaurantId, byte[] bytes, Token token) {
 		try {
-
-
+			
 			MongoClient mongo = new MongoClient("g.sj.gs");
 			DB db = mongo.getDB("GFS");
 //			DBCollection collection = db.getCollection("images");
@@ -93,6 +102,25 @@ public class RestaurantDaoImpl implements RestaurantDao {
 	}
 
 
+	
+	@Test
+	public void test(){
+		RestaurantDaoImpl rdao = new RestaurantDaoImpl();
+		
+		Restaurant restaurant = new Restaurant();
+		restaurant.setName("Mulan");
+		Address address = new Address();
+		address.setStreet("835 Main Street");
+		address.setCity("Waltham");
+		address.setState("MA");
+		address.setZipcode("02453");
+		restaurant.setAddress(address);
+		
+		
+		rdao.createRestaurant(restaurant, null);
+			
+	}
+	
 
 
 }

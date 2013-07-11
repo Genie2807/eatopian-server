@@ -1,7 +1,12 @@
 package com.eatopian.entity;
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "Restaurant")
 public class Restaurant{
 	
 	protected String name;
@@ -24,7 +29,21 @@ public class Restaurant{
 		
 	protected Menu menu;
 	
-	protected List<Review> review;
+	protected List<Review> reviews;
+	
+	public Restaurant(){
+		this.reviews = new ArrayList<Review>();
+		this.longitude = 7;
+		this.latitude = 28;	
+		Review review = new Review();
+		review.setDatetime(new Date());
+		review.setReview("caonima");
+		this.reviews.add(review);
+		
+	}
+	
+	
+	
 	
 	
 	public String getName() {
@@ -81,11 +100,11 @@ public class Restaurant{
 	public void setMenu(Menu menu) {
 		this.menu = menu;
 	}
-	public List<Review> getReview() {
-		return review;
+	public List<Review> getReviews() {
+		return reviews;
 	}
-	public void setReview(List<Review> review) {
-		this.review = review;
+	public void setReviews(List<Review> reviews) {
+		this.reviews = reviews;
 	}
 				
 }
